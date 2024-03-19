@@ -1,9 +1,7 @@
 import express, { Router } from 'express';
+
 const AuthenticationRoutes: Router = express.Router();
 AuthenticationRoutes.use(express.json());
-
-// endpoint de prueba
-AuthenticationRoutes.get('/echo', (req, res)=> { res.json({echo: 'echo'}); });
 
 AuthenticationRoutes.post('/login', (req, res)=> {    
     const requestData = req.body;

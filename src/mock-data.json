@@ -1,0 +1,2756 @@
+[
+    {
+      "id": "0x007F764030907C0D165242164C2F33C7CF4462DE",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:28:18"
+    },
+    {
+      "id": "0x009D5BA9F7F7B6D2AD838E8C4E43C0C81CC96400",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:53:40"
+    },
+    {
+      "id": "0x0212B5754CF5F6E34E55C849280F4F7F56093DE7",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T20:55:07"
+    },
+    {
+      "id": "0x030714F9997C6622B32EC7324AFFFE8410588500",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:52:00"
+    },
+    {
+      "id": "0x050EF9F39ADF52E744727521E4FAB848D10DDB68",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:25:02"
+    },
+    {
+      "id": "0x05E8E0242696BB3F33B6F12BF66A4F91DDEDBDF3",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T11:17:06"
+    },
+    {
+      "id": "0x0653F66793E13FEB684F6E24FDAB471F18746444",
+      "nps_puntaje": "8",
+      "nps_motivo": "A veces es muy lenta o se tranca",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:02:37"
+    },
+    {
+      "id": "0x0A69DAEC589F67D62806017DCFE77EAE08A53178",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T14:17:09"
+    },
+    {
+      "id": "0x0BF0ED8FC08DE163837D1BE2259605B00288D5E9",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:22:15"
+    },
+    {
+      "id": "0x0DCC1B8683B13737E05C493CF4737AE1F3B05823",
+      "nps_puntaje": "5",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T18:24:22"
+    },
+    {
+      "id": "0x0DDB1090DECD1757EDD50208D82750FD91BB5E37",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T18:41:21"
+    },
+    {
+      "id": "0x0E933869BF1DF2E3F66B80FFE0A10CCB3F93144C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T17:44:59"
+    },
+    {
+      "id": "0x0E9D8CBFD37EA5B43B00C6B87E7C2D5A9698EFD7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T11:49:25"
+    },
+    {
+      "id": "0x0EA6B18C43405F7166ABAF65717000AB879AEB3E",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T22:12:55"
+    },
+    {
+      "id": "0x0F2257CA1DAD5C42A5866566D2E3696ACE71843F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:27:03"
+    },
+    {
+      "id": "0x1076357F1CD66DB9AD18BCE1418925BC6688C8FA",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:43:38"
+    },
+    {
+      "id": "0x10D81DA7AE7585C761AB416BFD82394CF81B7134",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:03:04"
+    },
+    {
+      "id": "0x11AAF3DAFD7091163B06FE3562ACA5A3AFB12E23",
+      "nps_puntaje": "8",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T04:41:43"
+    },
+    {
+      "id": "0x120FA0C01FCD9F922BE49D5F8129FBC34E21C4E3",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:08:07"
+    },
+    {
+      "id": "0x12206D475C65FEF6CC14AD9BA834AAA92C10B2EF",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:23:29"
+    },
+    {
+      "id": "0x12F0BD3188E51BD219BE82094AC3E41962768CC6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:01:21"
+    },
+    {
+      "id": "0x132A7BE0BC26E8BE32CAAE3101924BAC5829AC37",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T02:53:30"
+    },
+    {
+      "id": "0x13E183193E370688922D95FE87E36D8CB8D96E81",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:31:37"
+    },
+    {
+      "id": "0x14E45B803EB5BF9A6A3A3B6BFD3C53BDFE72F0A5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T14:33:40"
+    },
+    {
+      "id": "0x1502B665D485A762519E5B5A2BB868870DDD4EA4",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T02:28:17"
+    },
+    {
+      "id": "0x159C7A795845F044A605EA6D05414DEE4EEE2BC2",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T00:04:33"
+    },
+    {
+      "id": "0x16769DA81BB77DC7A87F833F4D6B1ED59E36A036",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T00:37:22"
+    },
+    {
+      "id": "0x1680C8C6462274D365510F342B4141D943A9E11A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T23:58:36"
+    },
+    {
+      "id": "0x17629CE805290B8962FD5125F3235F7D8722302B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T16:04:21"
+    },
+    {
+      "id": "0x191BA875424029A99958F2EEF876A0698CA299A1",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T15:08:01"
+    },
+    {
+      "id": "0x1A8F94CDE430D7A3C1681097EAB496840ECA776D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:42:12"
+    },
+    {
+      "id": "0x1C9A8384EED2E09D204266623D39C636A05B99BC",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:27:00"
+    },
+    {
+      "id": "0x2051FB44D0102E2A66399FBB36E2AC114A864A67",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:59:48"
+    },
+    {
+      "id": "0x2146521DE6457167AD906527B00ED1DE53FE2501",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:05:57"
+    },
+    {
+      "id": "0x21CDF748E393E07C5FC05BB09D04A2FCB2F49EBB",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T19:22:57"
+    },
+    {
+      "id": "0x22667FE9095A62DC9F36BA6952E3A5903B1331E4",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:14:49"
+    },
+    {
+      "id": "0x22E77B9AE51A5F3BE2CEADA419261420A5CA32C5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T02:47:06"
+    },
+    {
+      "id": "0x237143182CCCCB0246A1196FFBB55B2CC1D44ADF",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T18:51:42"
+    },
+    {
+      "id": "0x24537E2FA3A82122655FEC8619F105632E92795C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T15:52:12"
+    },
+    {
+      "id": "0x251F7086477B9A133D511B84AC011D4ACBF14FAD",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T01:06:15"
+    },
+    {
+      "id": "0x25E379A5E98D0ED1722A014064DF96FC8F2A7EDC",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:38:59"
+    },
+    {
+      "id": "0x2767DA0EACCCCD008AFB30E1C237274D8AD46EFE",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:41:13"
+    },
+    {
+      "id": "0x279CF5E4E6EC1A30867084A50FDF3B173FB892D2",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:11:21"
+    },
+    {
+      "id": "0x285E7B68C962BD0848215917E6810A6255D8252C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:50:41"
+    },
+    {
+      "id": "0x292806E710E6ABE6F2BBE9FF707081F63E9EF81B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T01:27:28"
+    },
+    {
+      "id": "0x297E57D39A96DFE9B9EFE52540BEA9F65A5C6A46",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T12:22:52"
+    },
+    {
+      "id": "0x2A28909EF00BEFB31326BB2550B74BFD540299B2",
+      "nps_puntaje": "8",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T20:06:02"
+    },
+    {
+      "id": "0x2B34C0504B1E4B46A36AFFB8AB9BD07C3AB0B2F9",
+      "nps_puntaje": "7",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:16:50"
+    },
+    {
+      "id": "0x2B8BA074F6918201CE8E1A13303B0776EFA3E659",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T20:05:54"
+    },
+    {
+      "id": "0x2BD49026557367E088B4FC64FC3E4BF0E0EFD339",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T00:25:45"
+    },
+    {
+      "id": "0x2C9C5966C7466104F9BA040AC6AD0C145AB04C5B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T11:05:05"
+    },
+    {
+      "id": "0x2F3EE48A2159D8D3BD49AF8374DF0749EC2A431A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:16:07"
+    },
+    {
+      "id": "0x2F60518FF38231BE82DE68C5D40F08832CE3B2C5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T14:03:01"
+    },
+    {
+      "id": "0x2F8FE535D490598969C2992CAC51CAE931DE0EC7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:37:54"
+    },
+    {
+      "id": "0x3061B4DB185437550D421BDA9D0C5B4E03061D59",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:06:28"
+    },
+    {
+      "id": "0x31723B9945D1BCC2D59689BF464D45355A497E8B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:42:30"
+    },
+    {
+      "id": "0x338665CB41BBC2FC74BA7593ABD82879F8524668",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:14:36"
+    },
+    {
+      "id": "0x342CF6F7ADBC57C97957E9ED33ED711D13ECB6C2",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:07:43"
+    },
+    {
+      "id": "0x3462496C83D8BD35CC95DA45E54B02B7466EC485",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T01:54:27"
+    },
+    {
+      "id": "0x35434497822002BDC5688905F290051FB0D083ED",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T19:30:20"
+    },
+    {
+      "id": "0x3546F9FD21BE56B51668B803B31453CFE9B4FCE7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:17:05"
+    },
+    {
+      "id": "0x356AF804B87FA7971BC4C00AF3D1CB614B6ED6C8",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "WEB_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T13:57:20"
+    },
+    {
+      "id": "0x3637C0982C87DECDBB87BB47281AA7DA8CBA8BE0",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:16:14"
+    },
+    {
+      "id": "0x39224989F1BACF7B9A3C646AA231F8DD17ABBF06",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T10:04:29"
+    },
+    {
+      "id": "0x3B88A247A3F349273F748943AA1B8EB7CFC33FCD",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:35:00"
+    },
+    {
+      "id": "0x3BD3DFE87AB7B6A7ECB66ACA09E36D9C63917F43",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:53:44"
+    },
+    {
+      "id": "0x3C6640C2439393EAA3593D4C399093F22F46E68B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:22:37"
+    },
+    {
+      "id": "0x3CF78D316B2C935B23162D282FC2BE1FA4ABFD5D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:56:32"
+    },
+    {
+      "id": "0x3D656AC491199541C91DB9796583A3519EAE2A1D",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:57:05"
+    },
+    {
+      "id": "0x3DB76A7334FC70E027E8072EFECE72EF51F0A684",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:18:49"
+    },
+    {
+      "id": "0x3E13498049247F50C5659AA8884AB6FD6CA65324",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:11:09"
+    },
+    {
+      "id": "0x3EDB2D837F77F9D3C22520B8F9179E311005EFB6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:28:45"
+    },
+    {
+      "id": "0x3F20C93849CED415C3E8CB8E7C5F2C40C8B850D5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:52:23"
+    },
+    {
+      "id": "0x3F6821FA3481BC7E34575F9D9779E4C4F42667B3",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:01:05"
+    },
+    {
+      "id": "0x403421470329DD4EDF71B38E6B9EF8049B4CED71",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:24:33"
+    },
+    {
+      "id": "0x40EA49BE5EED0F410C2A2B774342C71AD462BD68",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:07:31"
+    },
+    {
+      "id": "0x412484384F1438A66D8848FC000D36398F079C29",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:47:44"
+    },
+    {
+      "id": "0x4252665E697D2C001CCEEACC006B95EACBCED426",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:32:22"
+    },
+    {
+      "id": "0x42EB5E2A3996CB414F46B4E7D58A81181075E834",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:54:07"
+    },
+    {
+      "id": "0x4329F947CEA8653C08A215560E9FF90BA3221A48",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:13:07"
+    },
+    {
+      "id": "0x43F908163B1B5B2575AB083E6E55B36987832AEA",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:44:35"
+    },
+    {
+      "id": "0x44521C71F758B708FC0B8B982B9D0A6E72D5A7D5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T01:18:59"
+    },
+    {
+      "id": "0x4498826793E272D17A83E362EC360B6584DF01C5",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-28T00:03:22"
+    },
+    {
+      "id": "0x44C9087FB35349C68AABBAAD3C755F027A137D22",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T05:09:43"
+    },
+    {
+      "id": "0x44CD75FB3875F6946E77129EC6F8059B5BC259C0",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:55:34"
+    },
+    {
+      "id": "0x45179A1A3D3C85547D04AB66E98A77726CAF15D1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:46:43"
+    },
+    {
+      "id": "0x46419E52C28BDD2875DFBF4F0A8FBF79BF1DDEA7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:14:45"
+    },
+    {
+      "id": "0x46F9152C7E1EB0C434367312BAC09E27FA426DC6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T12:56:01"
+    },
+    {
+      "id": "0x47AA96118F9971F8BDD725D1705685CD92DC97A7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T22:15:57"
+    },
+    {
+      "id": "0x47FE0F6281D9B51F316C01BBD6D6B66ADF5D2E85",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:23:07"
+    },
+    {
+      "id": "0x48DD70493752A00E32D473F9A87FBC9AFCF38D45",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:03:06"
+    },
+    {
+      "id": "0x4990958CFB48C0830D310DAD12C165D5D0C108FB",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:09:36"
+    },
+    {
+      "id": "0x4A968DA92BF2253114FE48890A8C8A6073D2BC79",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T09:40:19"
+    },
+    {
+      "id": "0x4B9C281AD3892AF2C90FA22533A22B570D27535E",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T20:51:26"
+    },
+    {
+      "id": "0x4DB5B44029F405B2461EEF4C7DB1B416D18029B4",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:12:00"
+    },
+    {
+      "id": "0x4E314A10E0B24D6DA5DF5716A584C7D17F7E7A29",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:52:50"
+    },
+    {
+      "id": "0x4E34D0375668D58ABB87F7303A3D32F9171B0905",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:30:07"
+    },
+    {
+      "id": "0x4F12ABF94BDA375E2F9F43C8CC30FE6FB1E750A1",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T14:34:15"
+    },
+    {
+      "id": "0x4F50EEE50F51BB016493EAF899520435CDD192FB",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:24:41"
+    },
+    {
+      "id": "0x502FA5A42508847D7068A20E753E22241DD74FE6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T04:44:11"
+    },
+    {
+      "id": "0x52407EA403A346CD443E15F7B8F8F40B276CA898",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:34:54"
+    },
+    {
+      "id": "0x526E837B7F5193956BB45966F9BC907D63DEC455",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:35:59"
+    },
+    {
+      "id": "0x55A2671ECC713EE79B71FE2E869827462A705CB6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:18:42"
+    },
+    {
+      "id": "0x566014662FAEF080316D045D962D456887C84EDB",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:58:30"
+    },
+    {
+      "id": "0x58DDAEC4A7E619FD83091B9AC4F6ECCC53C5978B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:22:56"
+    },
+    {
+      "id": "0x59098F2C4B55C6204D321FE7E64DABBEF8878514",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:47:37"
+    },
+    {
+      "id": "0x5C1E7CCF819834E4FCC1BCEBE174A7DEE88E1281",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:38:26"
+    },
+    {
+      "id": "0x5D1B8816F21825D36904B3C6978379DF13797A0D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T17:58:50"
+    },
+    {
+      "id": "0x5DB3425C7F4A168A903D4DCED2E7CA9C850A667C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:22:10"
+    },
+    {
+      "id": "0x5E5627EBA5E0DB52F53E509DF73F9A1FB7515959",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:30:25"
+    },
+    {
+      "id": "0x5F0CFB458BB8321DD220FA241AB69BE33D99B0C7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T03:39:54"
+    },
+    {
+      "id": "0x5FF0BF981EBA8584E25B71E0C2E6DE418158808D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:35:04"
+    },
+    {
+      "id": "0x6004F4C86CE98924897873CDEC0C306C32F5DB47",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:25:39"
+    },
+    {
+      "id": "0x601C340F40C6513E0A660FE6186002CBD03AAA1A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:29:59"
+    },
+    {
+      "id": "0x60BFA71A692D958BBBE3B576409BA6B78312C6E0",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:59:51"
+    },
+    {
+      "id": "0x626BBB5FAE3AEC101CDF31E21858372206A9D505",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:11:17"
+    },
+    {
+      "id": "0x62F5438C804B6E0DC7F39E0B404829D80A6D5854",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:23:36"
+    },
+    {
+      "id": "0x634B0F7211804215C8E3E71980089386746446AD",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:46:53"
+    },
+    {
+      "id": "0x636A635CCF6455DB53DA0F1DBCC178507BFED468",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:49:42"
+    },
+    {
+      "id": "0x63F7287376C3F0DBBE99F670306B446B2709B73F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:09:47"
+    },
+    {
+      "id": "0x643DBAFC4CBCD91B4EC99F9E3BBF944028D415AD",
+      "nps_puntaje": "7",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-28T01:05:17"
+    },
+    {
+      "id": "0x64F9963981AD0B062473400B3169766A80D3B37B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:53:51"
+    },
+    {
+      "id": "0x656D731952AF71AD6DE649C18B048C0C778B74C5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:14:53"
+    },
+    {
+      "id": "0x678A48C7CC724FE646C7927F195B4C0DD6E341D4",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-28T02:00:12"
+    },
+    {
+      "id": "0x682EF3B159228386C04A69899F5D367B9EF42EC5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:11:29"
+    },
+    {
+      "id": "0x684C7DAE3993A7CADA1052032597A30C8F490BD5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:59:33"
+    },
+    {
+      "id": "0x68822D0E57095DFB05C245F5508C1F0B309CE91F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T13:40:23"
+    },
+    {
+      "id": "0x68CAB4754176B24AFA7F074FAC2EA11A94A9FC74",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T19:48:44"
+    },
+    {
+      "id": "0x6BCB1888FC1C0386D57E719BAE19CD5E522CDB10",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:03:16"
+    },
+    {
+      "id": "0x6C89815E4A27CB627C3F4E291B4A5D5ED63F678B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:25:06"
+    },
+    {
+      "id": "0x6EA51A175A9CD15B950F8A7DC33E8D650D10CFA4",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:58:49"
+    },
+    {
+      "id": "0x6F69C419936BD87C34D3F8C20299665EFF667D91",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:52:08"
+    },
+    {
+      "id": "0x6FAB170CFBE067CBBBF702A028A64BA869C92A4F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:05:18"
+    },
+    {
+      "id": "0x6FD8131AEE35E380A2E3D5C538CA813BD11BF6F4",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:50:19"
+    },
+    {
+      "id": "0x7110927CB70722042F847431DBE374CED7AC80F0",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:07:18"
+    },
+    {
+      "id": "0x7138CB6D2AFFCACF9AA877A6673D7D0FE84944C8",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:32:35"
+    },
+    {
+      "id": "0x726103F932A02BDA21F2711942BD24F57A4FC6BB",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T23:02:25"
+    },
+    {
+      "id": "0x75A609337F03DD451204A84C477AA57D9CC20B4B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:24:29"
+    },
+    {
+      "id": "0x7635ADC02EDA152179FE87EFBA661C4A1C1ACECD",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:16:42"
+    },
+    {
+      "id": "0x765C2E066B765838003CC7E9586D89693D5DB5C7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:54:28"
+    },
+    {
+      "id": "0x766819BC6D0DB8A147AFD66F6A8935E2C43295F0",
+      "nps_puntaje": "8",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T17:23:04"
+    },
+    {
+      "id": "0x7704AE3A4BAE7B9682EE9611B64845CBDB9B7BC3",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T18:13:56"
+    },
+    {
+      "id": "0x787F83547222F00522EF95988E59A28643794F8B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:52:41"
+    },
+    {
+      "id": "0x7909AB8336D1237AE2502A74C588FE48356E81C5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:45:41"
+    },
+    {
+      "id": "0x798C0F5AA0AEBEE6305C43CC3A2A0A1DD4AE5971",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "WEB_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T12:11:32"
+    },
+    {
+      "id": "0x7995897A8250DE225F2005BF405D8B6672C89DDF",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:42:42"
+    },
+    {
+      "id": "0x79977C6E8D4BC844B78781AF6F831073364627EB",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T18:04:19"
+    },
+    {
+      "id": "0x7A91C11C5E92342178D1D8FCA042BAE2C238D35E",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:08:46"
+    },
+    {
+      "id": "0x7B9676BA21AE1246F12CEE262565ED4604517CA0",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:59:37"
+    },
+    {
+      "id": "0x7C98EE00F59A54DB47BCAF2EEDBBA33548FC7C5A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:07:47"
+    },
+    {
+      "id": "0x7D19B5735B88CEC6495D9EC884ECDF25E29631C7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:56:45"
+    },
+    {
+      "id": "0x7E008666256C9197C358912798D5659E51E76B63",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T05:37:45"
+    },
+    {
+      "id": "0x7E10B0004C05DEA5AE4A0E82AC6F080C126AE5FB",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T20:41:21"
+    },
+    {
+      "id": "0x7E5C79CE8737F17232AA1860DB032E759418E136",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T18:22:59"
+    },
+    {
+      "id": "0x7F6CFF7B875DB88A86BAA5719EEFA792CB08B939",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-28T00:25:53"
+    },
+    {
+      "id": "0x80E968033272BD172471F1E9DD4DB818DDD52AD1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:36:42"
+    },
+    {
+      "id": "0x820D0B9481627DD6F451AFAB4CE636AEB579A668",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:18:04"
+    },
+    {
+      "id": "0x824F114BABD4357E8FE34BACD0F00D928F22EAAD",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "WEB_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T15:40:06"
+    },
+    {
+      "id": "0x84389781AA4D5033B8EBB69F4FC9E8428BC556BA",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T18:56:58"
+    },
+    {
+      "id": "0x8461F9911989F04AAEBB9F512168B890BF52E684",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T02:29:44"
+    },
+    {
+      "id": "0x854CC0AB6E696CE5B3C126A9F52AB3F37CB86EC5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:08:50"
+    },
+    {
+      "id": "0x86CC6B3E75C7B4103DD9BF1A14D3CE3C90ADB1F1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:10:47"
+    },
+    {
+      "id": "0x896285D6480A32DB46914733FBA6C9CE316EA378",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:56:00"
+    },
+    {
+      "id": "0x8A5F56F6E08DB65173ABB905AD6D1A15550CDBA7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T14:58:03"
+    },
+    {
+      "id": "0x8AC2E4296AF9949D1526A6FFDA68D77CAD188C50",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:53:15"
+    },
+    {
+      "id": "0x8C736F692B049DD0CF56F83FDC6F0938BC4A7534",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T21:57:17"
+    },
+    {
+      "id": "0x8CFF1AB9453D7125305FCABFB8873F7FDECCF53D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:36:09"
+    },
+    {
+      "id": "0x8ED905ACC6487AF8A73482622AE64BC7C5E6B13D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:13:26"
+    },
+    {
+      "id": "0x90CCA4D2800C50576F0A0F813C4025C30890515C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:09:09"
+    },
+    {
+      "id": "0x91AF2DA5DF68EA72D4AD17B34E5FF4831A157887",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:19:32"
+    },
+    {
+      "id": "0x923C332C6BD631A705FB940CAAC2214D0F46C77C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:51:13"
+    },
+    {
+      "id": "0x92C7AA8DEBB9C2485371943597980418A897C91C",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T15:35:34"
+    },
+    {
+      "id": "0x939763DC535AACC32767290136E622D40C8A5198",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:17:31"
+    },
+    {
+      "id": "0x98F6115237219678935D702A792E2350F67857C2",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T12:47:43"
+    },
+    {
+      "id": "0x993818310EFC8AC6AD02F4FE00C7777CFC33BD43",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-28T01:48:59"
+    },
+    {
+      "id": "0x994FA2910A526BF7457C457EC5FD6BC1F09BF0D2",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T13:09:30"
+    },
+    {
+      "id": "0x995F8E61CB69D9030FC22788849C150B66651A8D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:33:04"
+    },
+    {
+      "id": "0x9B3A8299D60B94C5ABA0CE20958BD1CBC4B3BB30",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:30:29"
+    },
+    {
+      "id": "0x9BAA4E89BB6DA576F7202A5CFE00CFA4E487C47D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:22:48"
+    },
+    {
+      "id": "0x9C408118F4B5D558C73D0C914209273E250D1846",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:00:18"
+    },
+    {
+      "id": "0x9C6166740ABF557D90286015DF46B2FAFF39AE98",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T02:21:15"
+    },
+    {
+      "id": "0x9C723BA127C2EBF5DD50B20D0FC287E8D28C77B7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:40:12"
+    },
+    {
+      "id": "0x9CD058061B0ADE32B39B44FD618DD24B6E9D6AC6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:00:08"
+    },
+    {
+      "id": "0x9DE83246A46C5E1CA742B3AAE53294A1D10E0452",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:20:34"
+    },
+    {
+      "id": "0x9E091FAE2E744819DFD4C37D8B82F42933B9905B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:44:57"
+    },
+    {
+      "id": "0x9ECE2D3155378C7458391C83E553766C05F59077",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:22:42"
+    },
+    {
+      "id": "0x9ED7B9DC2D5464A51572A76FCA9E38C48340AD9A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T01:53:41"
+    },
+    {
+      "id": "0x9EEA9EC0591FA72B643D154A88825C26E7587A15",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:38:56"
+    },
+    {
+      "id": "0x9F4B48F031248403E0AE9BAA0CF482DFC08041F5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T13:05:04"
+    },
+    {
+      "id": "0xA00BF90520B23AC5E805DDBF7B7B936E6E1D2E64",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T18:12:39"
+    },
+    {
+      "id": "0xA0419AF25FAA024BEFAAAA83317A876A7DB8F97A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T09:51:43"
+    },
+    {
+      "id": "0xA05A47A501002F94585F7326E8A3EDC28A12897D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:03:07"
+    },
+    {
+      "id": "0xA0DD82DB17C11B10B35054BD770B2605F26389B0",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T01:41:12"
+    },
+    {
+      "id": "0xA2476A161AEB75C88AC18FAAC2444AE836897A6B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:54:27"
+    },
+    {
+      "id": "0xA3C617FB475582D7AEE49BA376E0743BC0A567DA",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T02:07:41"
+    },
+    {
+      "id": "0xA448A680B6A87A0C3BF1BDFDC7714289055FB7F1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:40:03"
+    },
+    {
+      "id": "0xA4AE3B63D63601D03B3B2853C72994DC3FBA029D",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T19:13:35"
+    },
+    {
+      "id": "0xA4F8E93CC18C645899757EDFB8E96661C32EF032",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:03:43"
+    },
+    {
+      "id": "0xA537EAF90B5B37F22EE50EE65CB2CB4CAB470CE6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:07:12"
+    },
+    {
+      "id": "0xA551448566ED280C8AA8E8E6517C0D36B8ADCF98",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:31:36"
+    },
+    {
+      "id": "0xA5B40BDBAA8677FF1E17BCD1773CDAD8C45E8161",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:46:40"
+    },
+    {
+      "id": "0xA5FB046985EAD42D34C25623A0D128FBE4DA026D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:16:41"
+    },
+    {
+      "id": "0xA72337256411BF3D7F423CBD0BD16448CA8E6830",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T19:29:54"
+    },
+    {
+      "id": "0xA780053F8776A6BC2C6425C3042EAB4B9155F7E3",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T02:36:11"
+    },
+    {
+      "id": "0xA884F08084C77019F2AC1617AC60C672F3761F71",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:38:05"
+    },
+    {
+      "id": "0xAABF4D52A749A07F81DBB2F77BE7BE0E769CE1D4",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T21:32:52"
+    },
+    {
+      "id": "0xAB9D2BBA57934BABACEA42F05F0EB95E29DB22DF",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:53:36"
+    },
+    {
+      "id": "0xACF7840F9CEBACD726C392CCB36CC703E929E3C1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:30:46"
+    },
+    {
+      "id": "0xADECD4BA4A2AAF6F4B91CD9A8C0A41BDCD46D4AE",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:38:21"
+    },
+    {
+      "id": "0xAE16319569706F1270E62FC3D999B9AF8985D3C6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T05:52:42"
+    },
+    {
+      "id": "0xAEEB4625959ACD4B97597527E1997C9F2EC699BF",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:18:17"
+    },
+    {
+      "id": "0xAF2B85223F3DDC997C0A525EA9DB69DC15FCD6F1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T00:11:23"
+    },
+    {
+      "id": "0xB0F94D76A0CFED120FD193B83B502F4FBF85834F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T17:57:35"
+    },
+    {
+      "id": "0xB16D7BBB9FF8537370D25635FDA0C75FBE013F6E",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:06:29"
+    },
+    {
+      "id": "0xB1D256A8614590DA9CCAD9522BE1707827FDB3BE",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:04:41"
+    },
+    {
+      "id": "0xB214802686854A4566D277BC63D0C313122A69DE",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:05:20"
+    },
+    {
+      "id": "0xB2C829C9E79550242C9DC0DB3CFC67852DE0244D",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:24:06"
+    },
+    {
+      "id": "0xB30EE02F39716B5F34E052C7DFC0990829962B7E",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:34:07"
+    },
+    {
+      "id": "0xB57E90C11F57F6C102A862819D3D2EF51B836DBD",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "WEB_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:26:02"
+    },
+    {
+      "id": "0xB5E0DC76AAF9F8983DCDC3502A4263355DEE077B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:38:04"
+    },
+    {
+      "id": "0xB8F8DC608977E42BDD4B1C3213394AB88FFB60F3",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:55:27"
+    },
+    {
+      "id": "0xBA2B4C9D57568E545AEA74B872155AABA5B57CCC",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:56:23"
+    },
+    {
+      "id": "0xBB1E580DDD6C92B8177EA5152808D5A7381E8015",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:20:07"
+    },
+    {
+      "id": "0xBB2D4B5832F912A4AEADA57A7B724D99B6301346",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:52:30"
+    },
+    {
+      "id": "0xBD256A4960B0D28742C04251CCD3D0D29987F263",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:41:23"
+    },
+    {
+      "id": "0xBEB2017B839421B94B22822E31815BA85F847C43",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T10:49:10"
+    },
+    {
+      "id": "0xC01491FDFCFACF6292BE8A1E7E4450FA9E3704D8",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:38:11"
+    },
+    {
+      "id": "0xC13D994ED0015D83AF661351C3CDC85A8493AFC1",
+      "nps_puntaje": "7",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T23:04:48"
+    },
+    {
+      "id": "0xC292AA32021E8F30566279C60984B49A7D6A421A",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T14:19:39"
+    },
+    {
+      "id": "0xC29FE415143C86570EE69F8357EE76F5CFC94D25",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:46:20"
+    },
+    {
+      "id": "0xC30DA70E9A766E6171DBA134D9B7D506E505A15F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T11:46:16"
+    },
+    {
+      "id": "0xC3FD7A72261A13231A7C1A115918863B6F94542C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:33:32"
+    },
+    {
+      "id": "0xC4870E0F184C4432D76C68EFAD4F4F06C9911416",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:33:18"
+    },
+    {
+      "id": "0xC4C0E56B2E5F0087B14C4F6DDBAC1D0473F6667F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T02:51:09"
+    },
+    {
+      "id": "0xC51D2BCFDD99FA0C0EC670DE3AA980A8794EC3FC",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:55:01"
+    },
+    {
+      "id": "0xC52788D1CA78A28B2C17FF5945A0430051A30C8A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:05:07"
+    },
+    {
+      "id": "0xC54E7B800D992B1D9C6187515AC58AB9EADFB389",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-28T00:50:31"
+    },
+    {
+      "id": "0xC5E2387BA3DBABE35ED6122C6196D4EE86D54BA1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:23:08"
+    },
+    {
+      "id": "0xC6127A97BDCE73CB6E819A09B087813B5250565A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:44:45"
+    },
+    {
+      "id": "0xC63608608F34D2B9FF7938144B77CC6B8E88B171",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:52:54"
+    },
+    {
+      "id": "0xCAFBBEA0F8D6BCE370D3AE48E2BC762D38D3FD37",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T08:05:33"
+    },
+    {
+      "id": "0xCB8C3DA019402B4DE10E864797163322CFF10546",
+      "nps_puntaje": "8",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "Web_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T15:46:37"
+    },
+    {
+      "id": "0xCBB96EDFD41481CB66BF6602F6FCE45C39C1FAC7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:25:22"
+    },
+    {
+      "id": "0xCC6962F5F71D5161961B47861762A26E697DDF85",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:15:09"
+    },
+    {
+      "id": "0xCCC0DC2E264395A3C8D55469666924961B4EA0F7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:36:46"
+    },
+    {
+      "id": "0xCDD6076313889A32DBE027CEFDDC7013050BA731",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:49:30"
+    },
+    {
+      "id": "0xD045BAB0582A164310AFE945C6FC73F6E87E078A",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T17:29:30"
+    },
+    {
+      "id": "0xD1539CEFC7252A02384F1DA8BA0BCEF016BEEDB7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:31:18"
+    },
+    {
+      "id": "0xD15784F4F9B72A455A4D7BD9640CD08A786CD878",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T17:34:06"
+    },
+    {
+      "id": "0xD244C7B6D906017EFB7B97C4981272B2F01D282F",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T15:55:27"
+    },
+    {
+      "id": "0xD3D25310018641BAF2C0FAA7625D61DC95D8A443",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:31:35"
+    },
+    {
+      "id": "0xD4495AFCE656566DD2343BAE3E3286AE5315CCDF",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T20:59:25"
+    },
+    {
+      "id": "0xD543D0B184182E96C10A42833A8A5D025D9CD5F7",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:33:03"
+    },
+    {
+      "id": "0xD5B54A61CA38CD8B669F5CECE426A70D6607038F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:33:37"
+    },
+    {
+      "id": "0xD641FEB69B3A2EE7957B3863B94618F8F7426802",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T21:40:41"
+    },
+    {
+      "id": "0xD6A9B268224D64B94A2EB3350275643CC5B8630E",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:24:35"
+    },
+    {
+      "id": "0xD80FD3A7325F6FF3B765FF570A1359FC835F1F89",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T19:03:44"
+    },
+    {
+      "id": "0xD836482C46CEE8FA2849BD968BB949707D9E944F",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "WEB_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:26:33"
+    },
+    {
+      "id": "0xD8382FB51D33C82717D4A667548F84B400A0007C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T22:00:45"
+    },
+    {
+      "id": "0xD8B047560BBBB95DCF7C05E8FC1A8F8199AA0BF5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:43:34"
+    },
+    {
+      "id": "0xD9592BD18809480E1F90AC04B5D475DFA208B284",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T00:06:11"
+    },
+    {
+      "id": "0xDA271ADD9B5202F3530D618294297F13639BDE62",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:57:04"
+    },
+    {
+      "id": "0xDBD204F4408041EAB2B11EC1A538BFA57F46DA9F",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:17:42"
+    },
+    {
+      "id": "0xDCFC9A5216C5A2BCBC11A2895BCD6D8D3A65ED1A",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T02:09:17"
+    },
+    {
+      "id": "0xDD0D3074C0780761D51014D811BC244A40B94C8C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:23:42"
+    },
+    {
+      "id": "0xDDD93DD92511719EC6CE8C283E4F2878916AE9E9",
+      "nps_puntaje": "7",
+      "nps_motivo": "El adelanto de sueldo",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T17:48:14"
+    },
+    {
+      "id": "0xDE0E4AB595E93A7E19F76A8B918AAF20EEF841DD",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:48:10"
+    },
+    {
+      "id": "0xDEF693D42FD71A31AFDDA286B37AB4F8093DB303",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:04:43"
+    },
+    {
+      "id": "0xDF567355ED162E11300A66AF76EAF0619FD97E72",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T11:50:59"
+    },
+    {
+      "id": "0xE00D80D5CD876614E9655A1058D9B51F8B891116",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:45:56"
+    },
+    {
+      "id": "0xE034B66F3A185684DDD306E2291E919ECC8176A6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T12:14:01"
+    },
+    {
+      "id": "0xE16A775BAA07B6001430B90DA4B38FEDA7D89783",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T22:13:00"
+    },
+    {
+      "id": "0xE1F20274713CA1FA3731AAACD16123454F3124DA",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-28T00:14:10"
+    },
+    {
+      "id": "0xE207763F0CAB057628DD26AED0A474AF08154C78",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:40:35"
+    },
+    {
+      "id": "0xE21E29F59AFD63A70CE4EA3D809B1DAB9BC96266",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:53:32"
+    },
+    {
+      "id": "0xE2DA3EDF0E2B9B678566C6FEABF25BE87BDD79B8",
+      "nps_puntaje": "8",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T16:55:14"
+    },
+    {
+      "id": "0xE309BD45C1098478CCA0162B179CC2DD6BFB07ED",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:07:20"
+    },
+    {
+      "id": "0xE33296DE5D58D3A60585DF3F31F52A6B3FB798E2",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T11:54:25"
+    },
+    {
+      "id": "0xE3E46A950A8397E896E160E56640CCED76A9FCB1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T13:12:51"
+    },
+    {
+      "id": "0xE4D7416E42C3B367B271781CCF3BE27F39AFBAB8",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:58:51"
+    },
+    {
+      "id": "0xE5151A65A6FB7A4ECAC899EAFC7C12AD452FEF0E",
+      "nps_puntaje": "9",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "App_Loyalty_PopUp_Notification",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T17:09:12"
+    },
+    {
+      "id": "0xE5356327CFE8196A7D64A1EBBF2BC91621468D72",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "APP_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T03:18:46"
+    },
+    {
+      "id": "0xE63A13C02F75377FCA02C368368DC04A62C60C0E",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:26:25"
+    },
+    {
+      "id": "0xE683216B14805FACC768FB769CE5BC2C10379D6E",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:06:24"
+    },
+    {
+      "id": "0xEBF004EB5359B52B9FF4B14C0E63FF7032872BC6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:02:29"
+    },
+    {
+      "id": "0xEC09033A38C268828041C19700CCEAE79B8B9143",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T12:39:22"
+    },
+    {
+      "id": "0xECE849EBAB128F10AA03DAE8590AE7A3B1987BB1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T22:42:57"
+    },
+    {
+      "id": "0xED23A7C68E0D828E443F754C651C2C5D86C46A75",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T12:15:24"
+    },
+    {
+      "id": "0xED6CA5225C746B7EAC6356E4750AE036B757C1B4",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T01:37:33"
+    },
+    {
+      "id": "0xEE206CF40A17C5BCDC4FFEC9D96BE68AD54C0F8C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:20:51"
+    },
+    {
+      "id": "0xEE2A6A69AD187B0729E9A3DBC430C51BD585D852",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T14:12:29"
+    },
+    {
+      "id": "0xEEBBA39D30CA34A8B240F0FBB17391FE26CBA287",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T19:29:52"
+    },
+    {
+      "id": "0xEECE2AB7B99CF55653F2856FAACD5255738CE64C",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T20:03:26"
+    },
+    {
+      "id": "0xEF899BA2E24290F1260933CD9D685AB6035988B2",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:51:23"
+    },
+    {
+      "id": "0xF1B8E615D4145B472FB8E9B999744A4824197649",
+      "nps_puntaje": "10",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "WEB_logout_popup",
+      "campaign-result": ":converted",
+      "last-contact-date": "2024-02-27T20:16:32"
+    },
+    {
+      "id": "0xF2C05B4C5CD1DD2F39176F4A4E0B89C47F989B71",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T17:36:40"
+    },
+    {
+      "id": "0xF881FF892C068B686159D9D5E3A41CFC72D6B1E0",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-28T01:46:03"
+    },
+    {
+      "id": "0xF8EFB1B63DB8324FD1778D7155ED58833D63912B",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-28T00:38:10"
+    },
+    {
+      "id": "0xF9CCCC1B99EDCDD73EB7B8DCF86F6ED01DF7C3A4",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T23:51:10"
+    },
+    {
+      "id": "0xF9FF06A105EDEC578B09E54EA978705C15702805",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:58:35"
+    },
+    {
+      "id": "0xFA524EBF20CEE79A41DE6BDB064E8CFFAD7BF7D5",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T21:59:45"
+    },
+    {
+      "id": "0xFB62BB3A5A49FA08E3E4FCB1FAE332257F2F88F1",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T15:15:44"
+    },
+    {
+      "id": "0xFC247EB3F84251350F18DCCB505AECFB7EBF20C6",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T16:45:43"
+    },
+    {
+      "id": "0xFCB97EBAA7B3356ECFC67B8139363B8A9C935AEF",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":lead",
+      "last-contact-date": "2024-02-27T17:54:59"
+    },
+    {
+      "id": "0xFDEF823FB82152AC37FDF1159DC6A86548323E39",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T22:13:45"
+    },
+    {
+      "id": "0xFE92C419EAF30BA7822A23D82598A7748D46E2B9",
+      "nps_puntaje": "",
+      "nps_motivo": "",
+      "campaign-name": "NPS Digital",
+      "trigger-placeholder": "",
+      "campaign-result": ":reached",
+      "last-contact-date": "2024-02-27T18:45:59"
+    }
+  ]
