@@ -5,7 +5,8 @@ import dotenv from 'dotenv';
 // aca se van a listar los controladores de las diferentes rutas
 import {
     AuthenticationRoutes,
-    DataRoutes
+    DataRoutes,
+    UserSettingsRoutes
 } from './controllers';
 
 import { logger } from './loggin-service';
@@ -32,9 +33,8 @@ app.use(express.json());
 
 // Rutas a los controladores
 app.use('/authentication', AuthenticationRoutes);
+// rutas protegidas por validacion de token
 app.use('/list', tokenValidator, DataRoutes);
-
-// endpoint de prueba
-app.get('/test', (req, res) => { res.send('Hello World!'); });
+app.use('/settings', tokenValidator, UserSettingsRoutes);
 
 app.listen(port, () => logger.info(`API PACS Softime corriendo en el puerto ${port}`));
