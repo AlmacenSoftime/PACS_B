@@ -6,7 +6,9 @@
         "moduleResolution": "node",
         "sourceMap": true,
         "outDir": "dist",
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
     },
     "lib": [
         "ES2022"

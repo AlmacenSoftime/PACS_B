@@ -1,7 +1,7 @@
 import winston from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
 
-const { combine, timestamp, json } = winston.format;
+const { combine, timestamp, simple, padLevels } = winston.format;
 
 const fileRotateTransport = new DailyRotateFile({
     filename: 'PACS-combined-%DATE%.log',
@@ -15,7 +15,7 @@ const logTransports = [fileRotateTransport, new winston.transports.Console()];
 
 const logger = winston.createLogger({
     level: process.env.LOG_LEVEL || 'info',
-    format: combine(timestamp(), json()),
+    format: combine(timestamp(), padLevels(), simple()),
     transports: logTransports
 });
 
