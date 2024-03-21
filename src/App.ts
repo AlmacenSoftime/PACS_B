@@ -2,6 +2,9 @@ import express from 'express';
 import cors from "cors";
 import dotenv from 'dotenv';
 
+import swaggerUi from 'swagger-ui-express';
+import swaggerDocument from './docs/swagger.json';
+
 // aca se van a listar los controladores de las diferentes rutas
 import {
     AuthenticationRoutes,
@@ -27,7 +30,6 @@ const corsOptions = {
     optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
-
 // middleware para parsear request json
 app.use(express.json());
 
@@ -36,5 +38,8 @@ app.use('/authentication', AuthenticationRoutes);
 // rutas protegidas por validacion de token
 app.use('/list', tokenValidator, DataRoutes);
 app.use('/settings', tokenValidator, UserSettingsRoutes);
+
+// swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.listen(port, () => logger.info(`API PACS Softime corriendo en el puerto ${port}`));

@@ -1,17 +1,8 @@
 import rawdata from '../../mock-data.json';
 
-/**
- * @description controlador para manejar datos de la grilla principal
- * @export
- * @class DataController
- */
 export class DataController {
 
-    /**
-     * getListData
-     */
-    public getListData() {
-        return Promise.resolve(rawdata);
+    public readonly getListData = async (request, response) => {
+        response.status(200).json(await Promise.resolve(rawdata));
     }
-
 }
