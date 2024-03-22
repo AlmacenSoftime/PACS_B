@@ -8,13 +8,13 @@ import { logger } from '../loggin-service';
 export const tokenValidator = (request: Request, response: Response, next: NextFunction) => {
     const token = request.header('Auth-Token');
     if (!token) {
-        logger.warn('Acceso denegado. Intento de llamado sin token desde: ' + request.ip);
-        return response.status(401).json({ error: 'Acceso denegado' });
+        logger.warn(`Acceso denegado. Intento de llamado sin token desde: ${request.ip}`);
+        response.status(401).json({ error: 'Acceso denegado' });
+        return;
     }
-
     try {
         jwt.verify(token, process.env.TOKEN_SECRET);
-        next() // continuamos
+        next(); // continuamos
     } catch (error) {
         const decodedToken = jwt.decode(token);
         logger.warn(`Usuario ${decodedToken ? decodedToken['fullName'] : 'desconocido'} con token invalido desde ip: ${request.ip}.`);

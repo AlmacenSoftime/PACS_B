@@ -15,11 +15,10 @@ const logTransports = [fileRotateTransport, new winston.transports.Console()];
 
 const logger = winston.createLogger({
     level: process.env.LOG_LEVEL || 'info',
-    format: combine(timestamp(), padLevels(), simple()),
+    format: combine(timestamp({ format: () => new Date().toISOString() }), padLevels(), simple()),
     transports: logTransports
 });
 
-process.on('SIGINT', () => { logger.warn("Señal SIGINT recibida. Terminando proceso...") });
-process.on('SIGTERM', () => { logger.error("Señal SIGTERM recibida. Terminando proceso...") });
+process.addListener('uncaughtException', (error: Error, origin) => { logger.error(`uncaughtException - Error: ${JSON.stringify(error)} | origin: ${JSON.stringify(origin)}`) });
 
 export { logger };

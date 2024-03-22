@@ -39,18 +39,22 @@
     "/authentication/login": {
       "post": {
         "description": "Método de login al sistema",
-        "tags": ["Autenticación"],
-        "parameters": [{
-          "$ref": "#/definitions/loginRequest"
-        }],
+        "tags": [
+          "Autenticación"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/definitions/loginRequest"
+          }
+        ],
         "responses": {
           "200": {
             "description": "Responde con token JWT"
           },
-          "400":{
+          "400": {
             "description": "Request inválido"
           },
-           "401": {
+          "401": {
             "description": "Login inválido"
           }
         }
@@ -59,7 +63,14 @@
     "/authentication/user": {
       "get": {
         "description": "Obtiene el objeto User codificado dentro del JWT",
-        "tags": ["Autenticación"],       
+        "tags": [
+          "Autenticación"
+        ],
+        "security": [
+          {
+            "apiKeyAuth": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "Objeto user con los roles y perfiles del usuario"
@@ -73,9 +84,16 @@
     "/authentication/refresh": {
       "post": {
         "description": "Método para refrescar el tiempo de expiracion de tokens válidos",
-        "tags": ["Autenticación"],    
+        "tags": [
+          "Autenticación"
+        ],
+        "security": [
+          {
+            "apiKeyAuth": []
+          }
+        ],
         "responses": {
-         "200": {
+          "200": {
             "description": "Token JWT con nuevo tiempo de expiración"
           },
           "401": {
@@ -85,11 +103,18 @@
       }
     },
     "/list/getData": {
-      "post": {
+      "get": {
         "description": "Método obtener los datos para alimentar la grilla principal",
-        "tags": ["Lista"],    
+        "tags": [
+          "Lista"
+        ],
+        "security": [
+          {
+            "apiKeyAuth": []
+          }
+        ],
         "responses": {
-         "200": {
+          "200": {
             "description": "Token JWT con nuevo tiempo de expiración"
           },
           "401": {
@@ -101,27 +126,25 @@
   },
   "definitions": {
     "loginRequest": {
-      "in":"body",
+      "in": "body",
       "name": "Login Request",
       "type": "object",
-      "required":true,      
+      "required": true,
       "properties": {
-        "email":{
+        "email": {
           "type": "string",
-          "example": "mail@ejemplo.com"          
-        },        
-          "password":{
-            "type": "string",
-            "example": "contraseña"            
-          }              
+          "example": "mail@ejemplo.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "contraseña"
+        }
       }
     },
     "listasResponse": {
       "name": "Lista Response",
       "type": "array",
-      "items": {
-        
-      }
+      "items": {}
     }
   }
 }
