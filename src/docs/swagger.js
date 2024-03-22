@@ -45,3 +45,5 @@ swaggerAutogen(outputFile, endpointsFiles, doc);
 // swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
 //     require('./index.js'); // Your project's root file
 //   });
+
+// EDITOR SWAGGER: https://editor-next.swagger.io/

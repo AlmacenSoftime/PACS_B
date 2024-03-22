@@ -9,8 +9,12 @@
   "basePath": "/",
   "tags": [
     {
-      "name": "Autenticacion",
-      "description": ""
+      "name": "Autenticación",
+      "description": "Métodos para el manejo de la seguridad en la aplicación"
+    },
+    {
+      "name": "Lista",
+      "description": "Métodos relacionados a la tabla principal de la aplicación"
     }
   ],
   "schemes": [
@@ -32,32 +36,64 @@
     "application/json"
   ],
   "paths": {
-    "/login": {
+    "/authentication/login": {
       "post": {
-        "description": "",
+        "description": "Método de login al sistema",
+        "tags": ["Autenticación"],
+        "parameters": [{
+          "$ref": "#/definitions/loginRequest"
+        }],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "Responde con token JWT"
+          },
+          "400":{
+            "description": "Request inválido"
+          },
+           "401": {
+            "description": "Login inválido"
           }
         }
       }
     },
-    "/user": {
+    "/authentication/user": {
       "get": {
-        "description": "",
+        "description": "Obtiene el objeto User codificado dentro del JWT",
+        "tags": ["Autenticación"],       
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "Objeto user con los roles y perfiles del usuario"
+          },
+          "401": {
+            "description": "Token de seguridad inválido o ausente"
           }
         }
       }
     },
-    "/refresh": {
+    "/authentication/refresh": {
       "post": {
-        "description": "",
+        "description": "Método para refrescar el tiempo de expiracion de tokens válidos",
+        "tags": ["Autenticación"],    
         "responses": {
-          "default": {
-            "description": ""
+         "200": {
+            "description": "Token JWT con nuevo tiempo de expiración"
+          },
+          "401": {
+            "description": "Token de seguridad inválido o ausente"
+          }
+        }
+      }
+    },
+    "/list/getData": {
+      "post": {
+        "description": "Método obtener los datos para alimentar la grilla principal",
+        "tags": ["Lista"],    
+        "responses": {
+         "200": {
+            "description": "Token JWT con nuevo tiempo de expiración"
+          },
+          "401": {
+            "description": "Token de seguridad inválido o ausente"
           }
         }
       }
@@ -65,16 +101,26 @@
   },
   "definitions": {
     "loginRequest": {
+      "in":"body",
+      "name": "Login Request",
       "type": "object",
+      "required":true,      
       "properties": {
-        "email": {
+        "email":{
           "type": "string",
-          "example": "ejemplo@email.com"
-        },
-        "pasword": {
-          "type": "string",
-          "example": "password"
-        }
+          "example": "mail@ejemplo.com"          
+        },        
+          "password":{
+            "type": "string",
+            "example": "contraseña"            
+          }              
+      }
+    },
+    "listasResponse": {
+      "name": "Lista Response",
+      "type": "array",
+      "items": {
+        
       }
     }
   }

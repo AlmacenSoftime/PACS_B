@@ -10,20 +10,6 @@ export class AuthenticationController {
     });
 
     public readonly login = async (request, response): Promise<void> => {
-        /*
-            #swagger.path = '/authentication/login'
-            #swagger.tag = 'Autenticacion'
-            #swagger.method = 'post'
-            #swagger.description = 'login'
-            #swagger.produces = ['application/json']
-            #swagger.parameters['loginRequest'] = {
-                in: 'body',
-                description: 'Objeto con email y password.',
-                schema: { $ref: '#/definitions/loginRequest' }
-            } 
-        */
-        // #swagger.responses[200]
-        // #swagger.responses[401]
         const requestData: LoginRequest = request.body;
 
         // Valido el body que me traiga datos validos
@@ -35,7 +21,9 @@ export class AuthenticationController {
         if (requestData.password === "admin") {
             user = await Promise.resolve(MOCK_USER);
         }
-        user = await Promise.reject(null);
+        else {
+            user = await Promise.resolve(null);
+        }
 
         // si el controlador me trae un usuario, el login es correcto
         if (user) {
@@ -55,7 +43,7 @@ export class AuthenticationController {
     }
 
     public readonly user = async (request, response): Promise<void> => {
-        const token = request.header('auth-token');
+        const token = request.header('Auth-Token');
         if (!token) {
             logger.warn(`${request.url} -Acceso denegado. Intento de llamado sin token desde: ${request.ip}`);
             return response.status(401).json({ error: 'Access denied' });
@@ -72,7 +60,7 @@ export class AuthenticationController {
     }
 
     public readonly refresh = async (request, response) => {
-        const token = request.header('auth-token');
+        const token = request.header('Auth-Token');
         if (!token) {
             logger.warn(`${request.url} - Acceso denegado. Intento de llamado sin token desde: ${request.ip}`);
             return response.status(401).json({ error: 'Access denied' });
