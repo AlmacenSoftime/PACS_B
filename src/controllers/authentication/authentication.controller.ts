@@ -1,8 +1,13 @@
+import "reflect-metadata"
 import { Request, Response } from "express";
+import { DataSource } from "typeorm";
+import bcrypt from 'bcrypt';
 import Joi from "joi";
 import jwt from 'jsonwebtoken';
 
 import { logger } from "../../loggin-service";
+import { Usuario } from "../../db-connection/models";
+import { createConnection } from "../../db-connection/DbConnection";
 
 /**
  * @description Controlador para manejar temas de autenticacion
@@ -10,6 +15,11 @@ import { logger } from "../../loggin-service";
  * @class AuthenticationController
  */
 export class AuthenticationController {
+    private dataSource: DataSource;
+
+    constructor() {
+        createConnection().then(conn => this.dataSource = conn);
+    }
 
     // con esta propiedad creo un esquema para validar que lo objetos tengan esas propiedades
     private readonly schemaLogin = Joi.object({
@@ -25,40 +35,63 @@ export class AuthenticationController {
      * @memberof AuthenticationController
      */
     public readonly login = async (request: Request, response: Response): Promise<void> => {
-        // obtengo el json del body
-        const requestData: LoginRequest = request.body;
+        try {
+            // obtengo el json del body
+            const requestData: LoginRequest = request.body;
 
-        // Valido el body que me traiga datos validos (emial y password)
-        const { error } = this.schemaLogin.validate(requestData);
-        if (error) {
-            response.status(400).json({ error: error.details });
-            return;
-        }
+            // Valido el body que me traiga datos validos (emial y password)
+            const { error } = this.schemaLogin.validate(requestData);
+            if (error) {
+                response.status(400).json({ error: error.details });
+                return;
+            }
 
-        let user = null;
-        // TODO: arreglar y llamar a la base/api o lo que sea
-        if (requestData.password === "admin") {
-            user = await Promise.resolve(MOCK_USER);
-        }
-        else {
-            user = await Promise.resolve(null);
-        }
-
-        // si el controlador me trae un usuario, el login es correcto
-        if (user) {
-            // firmo un JWT y lo envio como respuesta
-            const signedJWT = jwt.sign(
-                user,
-                process.env.TOKEN_SECRET,
-                { expiresIn: process.env.TOKEN_DURATION || 600 }
+            // Obtengo al usuario desde la base de datos con su e-mail
+            let userDb: Usuario = null;
+            userDb = await this.dataSource.manager.findOne(Usuario,
+                {
+                    where:
+                        { eMail: requestData.email },
+                    relations: ['Roles'],
+                    loadEagerRelations: true
+                }
             );
-            logger.info(`${request.url} - Usuario ${user.fullName} logueado correctamente.`);
-            response.status(200).json(signedJWT);
-        }
 
-        // el login es invalido
-        logger.warn(`${request.url} -Intento de login inválido con el mail ${requestData.email}`);
-        response.status(401).json({ message: 'Login inválido. Revise sus crendenciales.' });
+            if (userDb) {
+                // comparo la password plana contra el hash de la base de datos
+                if (await bcrypt.compare(requestData.password, userDb.password)) {
+                    // firmo un JWT y lo envio como respuesta
+                    const signedJWT = jwt.sign(
+                        {
+                            usuario: userDb.usuario,
+                            nombreCompleto: userDb.nombreApellido,
+                            fotoPerfil: userDb.fotoPefil,
+                            roles: Array.from(userDb.Roles || []),
+                            email: userDb.eMail
+                        },
+                        process.env.TOKEN_SECRET,
+                        { expiresIn: process.env.TOKEN_DURATION || 600 }
+                    );
+                    logger.info(`${request.url} - Usuario ${userDb.nombreApellido} logueado correctamente.`);
+                    response.status(200).json(signedJWT);
+                }
+                else {
+                    // el login es invalido
+                    logger.warn(`${request.url} - Intento de login inválido con el mail ${requestData.email}`);
+                    response.status(401).json({ message: 'Login inválido. Revise sus crendenciales.' });
+                }
+            }
+            else {
+                // si no trae registro, el email no esta registrdo
+                logger.warn(`${request.url} - El email ${requestData.email} no se encuentra registrado`);
+                response.status(401).json({ message: 'Login inválido. Revise sus crendenciales.' });
+            }
+        }
+        catch (error) {
+            // Error inesperado
+            logger.warn(`${request.url} - Error inesperado ${JSON.stringify(error)}`);
+            response.status(500).json({ message: 'Error Inesperado' });
+        }
     }
 
     /**
@@ -71,7 +104,7 @@ export class AuthenticationController {
     public readonly user = async (request: Request, response: Response): Promise<void> => {
         const token = request.header('Auth-Token');
         if (!token) {
-            logger.warn(`${request.url} -Acceso denegado. Intento de llamado sin token desde: ${request.ip}`);
+            logger.warn(`${request.url} - Acceso denegado. Intento de llamado sin token desde: ${request.ip}`);
             response.status(401).json({ error: 'Access denied' });
             return;
         }
@@ -102,7 +135,7 @@ export class AuthenticationController {
         }
         try {
             const payload = jwt.verify(token, process.env.TOKEN_SECRET) as jwt.JwtPayload;
-            if (payload == null) throw "error";
+            if (payload == null) throw "Error al verificar el token";
             delete payload.iat;
             delete payload.exp;
             delete payload.nbf;
@@ -113,6 +146,7 @@ export class AuthenticationController {
             response.status(200).json(refreshedToken);
 
         } catch (error) {
+            logger.error(`Error en ${request.url} - ${error?.message ? error?.message : error}`);
             response.status(401).json({ error: 'Access denied' });
         }
     }
@@ -125,23 +159,4 @@ export class AuthenticationController {
 interface LoginRequest {
     email: string;
     password: string;
-}
-
-/**
- * @description
- * @interface User
- */
-interface User {
-    id: number | string;
-    fullName: string;
-    roles: string[],
-    profiles: string[]
-}
-
-// TODO: Usuario MOCK. Eliminar cuando se aplique la obtencion del usuario
-const MOCK_USER: User = {
-    id: 1,
-    fullName: 'USUARIO DE PRUEBAS',
-    roles: ['DOCTOR'],
-    profiles: ['ADMIN']
 }
