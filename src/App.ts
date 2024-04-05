@@ -25,7 +25,7 @@ const port = process.env.PORT;
 
 // middleware para evitar error de CORS
 const corsOptions: CorsOptions = {
-    origin: '*', // Reemplazar con dominio
+    origin: process.env.CORS_ORIGIN,
     optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));

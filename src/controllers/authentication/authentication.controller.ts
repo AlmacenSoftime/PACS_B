@@ -60,6 +60,13 @@ export class AuthenticationController {
             if (userDb) {
                 // comparo la password plana contra el hash de la base de datos
                 if (await bcrypt.compare(requestData.password, userDb.password)) {
+                    // Si el login es correcto, pero no tiene roles, se le prohibe el accesso
+                    if (!userDb.Roles.length) {
+                        logger.warn(`${request.url} - No existen roles asignados para el usuario ${requestData.email}`);
+                        response.status(401).json({ message: 'Usuario sin permiso para acceder. Contacte con el administrador.' });
+                        return;
+                    }
+
                     // firmo un JWT y lo envio como respuesta
                     const signedJWT = jwt.sign(
                         {
