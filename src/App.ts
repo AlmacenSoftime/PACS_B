@@ -38,8 +38,11 @@ app.use('/authentication', AuthenticationRoutes);
 app.use('/list', tokenValidator, DataRoutes);
 app.use('/settings', tokenValidator, UserSettingsRoutes);
 
+console.log({ CONFIGURATION: process.env.CONFIGURATION });
+
 // swagger
 if (process.env.CONFIGURATION === 'dev') {
+    logger.info("Configuracion DEV");
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 }
 
