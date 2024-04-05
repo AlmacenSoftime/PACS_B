@@ -1,6 +1,10 @@
+import dotenv from 'dotenv';
+// configura la data de configuracion cargada en el archivo .env
+// algo parecido al environment en angular
+dotenv.config();
+
 import express from 'express';
 import cors, { CorsOptions } from "cors";
-import dotenv from 'dotenv';
 import swaggerUi from 'swagger-ui-express';
 
 import swaggerDocument from './docs/swagger.json';
@@ -16,17 +20,12 @@ import { logger } from './loggin-service';
 import { tokenValidator } from './middlewares/token-validator';
 
 logger.info('Iniciando servicio...');
-
-// configura la data de configuracion cargada en el archivo .env
-// algo parecido al environment en angular
-dotenv.config();
-
 const app = express();
 const port = process.env.PORT;
 
 // middleware para evitar error de CORS
 const corsOptions: CorsOptions = {
-    origin: '*', // Reemplazar con dominio
+    origin: process.env.CORS_ORIGIN,
     optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
@@ -39,8 +38,11 @@ app.use('/authentication', AuthenticationRoutes);
 app.use('/list', tokenValidator, DataRoutes);
 app.use('/settings', tokenValidator, UserSettingsRoutes);
 
+console.log({ CONFIGURATION: process.env.CONFIGURATION });
+
 // swagger
 if (process.env.CONFIGURATION === 'dev') {
+    logger.info("Configuracion DEV");
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 }
 
