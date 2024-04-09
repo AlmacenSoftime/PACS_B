@@ -18,6 +18,8 @@ import {
 
 import { logger } from './loggin-service';
 import { tokenValidator } from './middlewares/token-validator';
+import { UserAdministrationRoutes } from './controllers/users-administrations/users.administration.routes';
+//import { permissionsValidator } from './middlewares/permissions-validator';
 
 logger.info('Iniciando servicio...');
 const app = express();
@@ -37,6 +39,7 @@ app.use('/authentication', AuthenticationRoutes);
 // rutas protegidas por validacion de token
 app.use('/list', tokenValidator, DataRoutes);
 app.use('/settings', tokenValidator, UserSettingsRoutes);
+app.use('/admin-users', tokenValidator,/* permissionsValidator([]),*/ UserAdministrationRoutes);
 
 console.log({ CONFIGURATION: process.env.CONFIGURATION });
 

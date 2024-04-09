@@ -1,4 +1,3 @@
-import "reflect-metadata"
 import { Request, Response } from "express";
 import { DataSource } from "typeorm";
 import bcrypt from 'bcrypt';
@@ -15,11 +14,6 @@ import { createConnection } from "../../db-connection/DbConnection";
  * @class AuthenticationController
  */
 export class AuthenticationController {
-    private dataSource: DataSource;
-
-    constructor() {
-        createConnection().then(conn => this.dataSource = conn);
-    }
 
     // con esta propiedad creo un esquema para validar que lo objetos tengan esas propiedades
     private readonly schemaLogin = Joi.object({
@@ -36,6 +30,8 @@ export class AuthenticationController {
      */
     public readonly login = async (request: Request, response: Response): Promise<void> => {
         try {
+            const dataSource: DataSource = await createConnection();
+
             // obtengo el json del body
             const requestData: LoginRequest = request.body;
 
@@ -48,7 +44,7 @@ export class AuthenticationController {
 
             // Obtengo al usuario desde la base de datos con su e-mail
             let userDb: Usuario = null;
-            userDb = await this.dataSource.manager.findOne(Usuario,
+            userDb = await dataSource.manager.findOne(Usuario,
                 {
                     where:
                         { eMail: requestData.email },
@@ -93,6 +89,8 @@ export class AuthenticationController {
                 logger.warn(`${request.url} - El email ${requestData.email} no se encuentra registrado`);
                 response.status(401).json({ message: 'Login inválido. Revise sus crendenciales.' });
             }
+
+            await dataSource.destroy();
         }
         catch (error) {
             // Error inesperado

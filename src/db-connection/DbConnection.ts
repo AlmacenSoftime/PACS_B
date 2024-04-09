@@ -13,15 +13,11 @@ const dbConnection = new DataSource({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     entities: [Usuario, Rol, Permiso],
-    logging: false,
+    logging: true,
     logger: "advanced-console"
 });
 
 export const createConnection = async () => {
-    if (dbConnection.isInitialized) {
-        return Promise.resolve(dbConnection);
-    }
-
     try {
         return await dbConnection.initialize();
     } catch (err) {
