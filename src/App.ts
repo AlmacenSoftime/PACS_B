@@ -18,6 +18,9 @@ import {
 
 import { logger } from './loggin-service';
 import { tokenValidator } from './middlewares/token-validator';
+import { UserAdministrationRoutes } from './controllers/users-administrations/users.administration.routes';
+import { RolesRoutes } from './controllers/roles/rol.routes';
+//import { permissionsValidator } from './middlewares/permissions-validator';
 
 logger.info('Iniciando servicio...');
 const app = express();
@@ -31,12 +34,15 @@ const corsOptions: CorsOptions = {
 app.use(cors(corsOptions));
 // middleware para parsear request json
 app.use(express.json());
+app.use(nocache);
 
 // Rutas a los controladores
 app.use('/authentication', AuthenticationRoutes);
 // rutas protegidas por validacion de token
 app.use('/list', tokenValidator, DataRoutes);
 app.use('/settings', tokenValidator, UserSettingsRoutes);
+app.use('/roles', tokenValidator, RolesRoutes);
+app.use('/admin-users', tokenValidator,/* permissionsValidator([]),*/ UserAdministrationRoutes);
 
 console.log({ CONFIGURATION: process.env.CONFIGURATION });
 
@@ -47,3 +53,10 @@ if (process.env.CONFIGURATION === 'dev') {
 }
 
 app.listen(port, () => logger.info(`API PACS Softime corriendo en el puerto ${port}`));
+
+function nocache(req, res, next) {
+    res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+    res.header('Expires', '-1');
+    res.header('Pragma', 'no-cache');
+    next();
+}

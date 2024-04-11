@@ -4,9 +4,9 @@ import { UserSettingsController } from './user-settings.controller';
 const UserSettingsRoutes: Router = express.Router();
 const userSettingsController = new UserSettingsController();
 
-UserSettingsRoutes.get('/:userId/:configName', userSettingsController.getSettings);
-UserSettingsRoutes.post('/:userId/:configName', userSettingsController.postSettings);
-UserSettingsRoutes.put('/:userId/:configName', userSettingsController.putSettings);
-UserSettingsRoutes.delete('/:userId/:configName', userSettingsController.deleteSettings);
+UserSettingsRoutes.get('/', userSettingsController.getSettings);
+UserSettingsRoutes.post('/', userSettingsController.postSettings);
+UserSettingsRoutes.put('/', userSettingsController.putSettings);
+UserSettingsRoutes.delete('/', userSettingsController.deleteSettings);
 
 export { UserSettingsRoutes };

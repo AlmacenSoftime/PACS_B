@@ -5,6 +5,8 @@ import { DataSource } from "typeorm"
 import { Permiso, Rol, Usuario } from "./models";
 import { logger } from "../loggin-service";
 
+const debugMode = process.env.CONFIGURATION === 'dev';
+
 const dbConnection = new DataSource({
     type: 'mysql',
     host: process.env.DB_HOST,
@@ -13,19 +15,32 @@ const dbConnection = new DataSource({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     entities: [Usuario, Rol, Permiso],
-    logging: false,
-    logger: "advanced-console"
+    poolSize: 100,
+    logger: "advanced-console",
+    logging: debugMode
 });
 
-export const createConnection = async () => {
-    if (dbConnection.isInitialized) {
-        return Promise.resolve(dbConnection);
-    }
+let isConnecting = false;
 
-    try {
-        return await dbConnection.initialize();
-    } catch (err) {
-        logger.error('DB: Error: ' + JSON.stringify(err));
-        throw err;
-    }
+export const createConnection = async (): Promise<DataSource> => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            if (dbConnection.isInitialized || isConnecting) {
+                if (isConnecting) {
+                    setTimeout(() => {
+                        resolve(dbConnection);
+                    }, 1000);
+                }
+                else {
+                    resolve(dbConnection);
+                }
+            } else {
+                isConnecting = true;
+                return resolve(await dbConnection.initialize().finally(() => isConnecting = false));
+            }
+        } catch (err) {
+            logger.error('DB: Error: ' + JSON.stringify(err));
+            reject(err);
+        }
+    });
 }

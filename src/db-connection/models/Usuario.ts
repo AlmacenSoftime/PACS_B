@@ -34,7 +34,7 @@ export class Usuario {
     @Column({ name: 'sEstado' })
     estado: string;
 
-    @ManyToMany(() => Rol, { eager: true })
+    @ManyToMany(() => Rol, { eager: true, cascade: true, onDelete: "CASCADE", onUpdate: "CASCADE" })
     @JoinTable({ name: 'usuariorol', joinColumn: { name: 'nUsuarioID' }, inverseJoinColumn: { name: 'nRolID' } })
     Roles: Rol[];
 
