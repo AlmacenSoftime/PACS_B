@@ -25,7 +25,6 @@ export class UserSettingsController {
             const user: Usuario = this.getUserFromToken(request);
             const configFromUser = await dataSource.manager.findOne(Usuario, { where: { usuario: user.usuario }, relations: [], select: ["config"] });
             response.status(200).json(JSON.parse(configFromUser?.config));
-            await dataSource.destroy();
         } catch (error) {
             logger.error(`${request.url} - Error inesperado: ${JSON.stringify(error)}`);
             response.sendStatus(500);

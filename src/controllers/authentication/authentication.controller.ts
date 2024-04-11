@@ -48,7 +48,7 @@ export class AuthenticationController {
                 {
                     where:
                         { eMail: requestData.email },
-                    relations: ['Roles'],
+                    relations: ['Roles', 'Roles.Permisos'],
                     loadEagerRelations: true
                 }
             );
@@ -89,8 +89,6 @@ export class AuthenticationController {
                 logger.warn(`${request.url} - El email ${requestData.email} no se encuentra registrado`);
                 response.status(401).json({ message: 'Login inválido. Revise sus crendenciales.' });
             }
-
-            await dataSource.destroy();
         }
         catch (error) {
             // Error inesperado
