@@ -21,6 +21,7 @@ import { tokenValidator } from './middlewares/token-validator';
 import { UserAdministrationRoutes } from './controllers/users-administrations/users.administration.routes';
 import { RolesRoutes } from './controllers/roles/rol.routes';
 //import { permissionsValidator } from './middlewares/permissions-validator';
+//import { PERMISOS } from './constants';
 
 logger.info('Iniciando servicio...');
 const app = express();
@@ -34,17 +35,40 @@ const corsOptions: CorsOptions = {
 app.use(cors(corsOptions));
 // middleware para parsear request json
 app.use(express.json());
-app.use(nocache);
 
 // Rutas a los controladores
 app.use('/authentication', AuthenticationRoutes);
 // rutas protegidas por validacion de token
-app.use('/list', tokenValidator, DataRoutes);
-app.use('/settings', tokenValidator, UserSettingsRoutes);
-app.use('/roles', tokenValidator, RolesRoutes);
-app.use('/admin-users', tokenValidator,/* permissionsValidator([]),*/ UserAdministrationRoutes);
+// Lista de estudios
+app.use(
+    '/list',
+    tokenValidator,
+    //permissionsValidator([PERMISOS.VISUALIZAR_INFORMES]),
+    DataRoutes
+);
 
-console.log({ CONFIGURATION: process.env.CONFIGURATION });
+// settings de usuario
+app.use(
+    '/settings',
+    tokenValidator,
+    UserSettingsRoutes
+);
+
+// roles
+app.use(
+    '/roles',
+    tokenValidator,
+    //permissionsValidator([PERMISOS.ABM_USUARIOS]),
+    RolesRoutes
+);
+
+// Administracion de usuarios
+app.use(
+    '/admin-users',
+    tokenValidator,
+    //permissionsValidator([PERMISOS.ABM_USUARIOS]),
+    UserAdministrationRoutes
+);
 
 // swagger
 if (process.env.CONFIGURATION === 'dev') {
@@ -53,10 +77,3 @@ if (process.env.CONFIGURATION === 'dev') {
 }
 
 app.listen(port, () => logger.info(`API PACS Softime corriendo en el puerto ${port}`));
-
-function nocache(req, res, next) {
-    res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
-    res.header('Expires', '-1');
-    res.header('Pragma', 'no-cache');
-    next();
-}

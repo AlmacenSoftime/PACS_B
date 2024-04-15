@@ -13,6 +13,10 @@
       "description": "Métodos para el manejo de la seguridad en la aplicación"
     },
     {
+      "name": "Roles",
+      "description": "Métodos para el manejo de roles"
+    },
+    {
       "name": "Lista",
       "description": "Métodos relacionados a la tabla principal de la aplicación"
     }
@@ -116,6 +120,28 @@
         "responses": {
           "200": {
             "description": "Token JWT con nuevo tiempo de expiración"
+          },
+          "401": {
+            "description": "Token de seguridad inválido o ausente"
+          }
+        }
+      }
+    },
+    "/roles": {
+      "get": {
+        "description": "Obtiene los roles creados en la base de datos",
+        "tags": [
+          "Roles"
+        ],
+        "security": [
+          {
+            "apiKeyAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de roles"
+
           },
           "401": {
             "description": "Token de seguridad inválido o ausente"

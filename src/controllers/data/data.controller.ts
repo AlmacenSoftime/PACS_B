@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import rawdata from '../../mock-data.json';
+import { OrthancConnector } from "../../orthanc-connection";
 
 /**
  * @description Controlador con metodos para el manejo de la grilla principal del sistema
@@ -8,6 +8,12 @@ import rawdata from '../../mock-data.json';
  */
 export class DataController {
 
+    private DICOMConnector: OrthancConnector;
+
+    constructor() {
+        this.DICOMConnector = new OrthancConnector();
+    }
+
     /**
      * @description Devuelve los datos para popular la grilla principal
      * @param {Request} request
@@ -15,6 +21,11 @@ export class DataController {
      * @memberof DataController
      */
     public readonly getListData = async (request: Request, response: Response): Promise<void> => {
-        response.status(200).json(await Promise.resolve(rawdata));
+        try {
+            const estudios = await this.DICOMConnector.getStudies();
+            response.status(200).json(estudios);
+        } catch (error) {
+            response.status(500).json(error);
+        }
     }
 }

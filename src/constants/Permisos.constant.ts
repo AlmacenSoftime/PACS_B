@@ -1,0 +1,5 @@
+export const PERMISOS = {
+    ABM_USUARIOS: 1,
+    VISUALIZAR_INFORMES: 2,
+    ABRIR_INFORMES: 3
+}
