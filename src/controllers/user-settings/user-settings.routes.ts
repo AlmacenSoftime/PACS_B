@@ -5,8 +5,8 @@ const UserSettingsRoutes: Router = express.Router();
 const userSettingsController = new UserSettingsController();
 
 UserSettingsRoutes.get('/', userSettingsController.getSettings);
-UserSettingsRoutes.post('/', userSettingsController.postSettings);
-UserSettingsRoutes.put('/', userSettingsController.putSettings);
-UserSettingsRoutes.delete('/', userSettingsController.deleteSettings);
+UserSettingsRoutes.post('/', userSettingsController.postOrPutSettings);
+UserSettingsRoutes.put('/', userSettingsController.postOrPutSettings);
+UserSettingsRoutes.delete('/:configName', userSettingsController.deleteSettings);
 
 export { UserSettingsRoutes };

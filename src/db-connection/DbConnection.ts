@@ -5,7 +5,7 @@ import { DataSource } from "typeorm"
 import { Permiso, Rol, Usuario } from "./models";
 import { logger } from "../loggin-service";
 
-const debugMode = process.env.CONFIGURATION === 'dev';
+const debugMode =  false; //process.env.CONFIGURATION === 'dev';
 
 const dbConnection = new DataSource({
     type: 'mysql',
