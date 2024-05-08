@@ -33,7 +33,7 @@ export class OrthancConnector {
                         const mappingData = ORTHANC_MAPPING_INFO[patientTag];
 
                         // Creo la key en el objeto a devolver
-                        studyObject[mappingData?.name ?? tagData.Name] = this.getValue(tagData.Value, tagData.Type);
+                        studyObject[mappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, tagData.Type);
                     }
                 }
 
@@ -46,14 +46,14 @@ export class OrthancConnector {
                         const mappingData = ORTHANC_MAPPING_INFO[DICOMTag];
 
                         // Creo la key en el objeto a devolver
-                        studyObject[mappingData?.name ?? tagData.Name] = this.getValue(tagData.Value, tagData.Type);
+                        studyObject[mappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, mappingData?.type);
                     }
                 }
 
                 // guardo el resto de la data relevante
                 studyObject['ID'] = study.ID;
                 //studyObject['Series'] = study.Series;
-                studyObject['Type'] = study.Type;
+                studyObject['Tipo'] = study.Type;
 
                 // agrego el estudio transformado al array de estudios que se va a devolver
 
@@ -69,11 +69,32 @@ export class OrthancConnector {
         }
     }
 
-    private getValue(value, type) {
+    private getValue(value: string, type: string): string {
         if (!value) return null;
-        // TODO:
-        // ver los distintos casos
+
         switch (type) {
+            case 'Date':
+                if (value?.length == 8) {
+                    const year = value.slice(0, 4);
+                    const month = value.slice(4, 6);
+                    const day = value.slice(6);
+                    return `${day}/${month}/${year}`;
+                }
+                else '';
+                break;
+            case 'Time':
+                if (value?.length == 13) {
+                    const hour = value.slice(0, 2);
+                    const min = value.slice(2, 4);
+                    const sec = value.slice(4, 6);
+                    return `${hour}:${min}:${sec}`;
+                }
+                if (value?.length == 4) {
+                    const hour = value.slice(0, 2);
+                    const min = value.slice(2, 4);
+                    return `${hour}:${min}`;
+                }
+                return '';
             default:
             case 'String':
                 return value;
