@@ -33,7 +33,7 @@ export class OrthancConnector {
                         const mappingData = ORTHANC_MAPPING_INFO[patientTag];
 
                         // Creo la key en el objeto a devolver
-                        studyObject[mappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, tagData.Type);
+                        studyObject[mappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, mappingData?.type);
                     }
                 }
 
