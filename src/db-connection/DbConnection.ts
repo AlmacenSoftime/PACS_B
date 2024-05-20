@@ -2,7 +2,7 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
 
-import { Permiso, Rol, Usuario } from "./models";
+import { EstudioInforme, Permiso, Rol, Usuario } from "./models";
 import { logger } from "../loggin-service";
 
 const debugMode =  process.env.CONFIGURATION === 'dev';
@@ -14,7 +14,7 @@ const dbConnection = new DataSource({
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
-    entities: [Usuario, Rol, Permiso],
+    entities: [Usuario, Rol, Permiso, EstudioInforme],
     poolSize: 100,
     logger: "advanced-console",
     logging: debugMode

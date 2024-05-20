@@ -11,13 +11,4 @@ export class Permiso {
 
     @Column({ name: 'sPermisoCodigo' })
     public PermisoCodigo: string;
-
-    @Column({ name: 'sEstado' })
-    public Estado: string;
-
-    @Column({ name: 'dCierreFechaHora' })
-    public FechaCierre: Date;
-
-    @Column({ name: 'sCierreUsuario' })
-    public UsuarioCierre: string;
 }

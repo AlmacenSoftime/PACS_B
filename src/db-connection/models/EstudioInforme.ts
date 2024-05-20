@@ -3,15 +3,27 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm"
 @Entity({ name: "estudioinforme" })
 export class EstudioInforme {
     @PrimaryGeneratedColumn({ name: 'nEstudioInformeID' })
-    id: number;
+    public id: number;
 
     @Column({ name: 'sEstudioID' })
-    EstudioId: string;
+    public EstudioId: string;
+
+    @Column({ name: 'sUsuario' })
+    public Usuario: string;
 
     @Column({ name: 'sPreInforme' })
-    Preinforme: string;
+    public Preinforme: string;
 
-    @Column({ name: 'sEstado' })
-    Estado: string;
+    @Column({ name: 'dCierreFechaHora' })
+    public FechaCierre: Date;
+
+    @Column({ name: 'sCierreUsuario' })
+    public UsuarioCierre: string;
+
+    @Column({ name: 'sAudAccion', default: '' })
+    public AudAccion: string;
+
+    @Column({ name: 'dAudFechaHora', default: '' })
+    public AudFechaHora: Date;
 
 }

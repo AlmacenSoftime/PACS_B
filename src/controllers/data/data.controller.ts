@@ -1,5 +1,7 @@
 import { Request, Response } from "express";
 import { OrthancConnector } from "../../orthanc-connection";
+import { createConnection } from "../../db-connection/DbConnection";
+import { EstudioInforme } from "../../db-connection/models";
 
 /**
  * @description Controlador con metodos para el manejo de la grilla principal del sistema
@@ -23,6 +25,22 @@ export class DataController {
     public readonly getListData = async (request: Request, response: Response): Promise<void> => {
         try {
             const estudios = await this.DICOMConnector.getStudies();
+            const dbConn = await createConnection();
+            const studiesRepository = dbConn.getRepository(EstudioInforme);
+
+            for (const estudio of estudios) {
+
+                estudio['Estado'] = (await studiesRepository
+                    .createQueryBuilder()
+                    .select(['sUsuario', 'sCierreUsuario'])
+                    .where({ EstudioId: estudio['ID'] })
+                    .limit(1)
+                    .execute()
+                    .then((res) =>
+                        res[0]?.sCierreUsuario ? 'Cerrado' :
+                            res[0]?.sUsuario ? 'Informando' : 'Pendiente'));
+            }
+
             response.status(200).json(estudios);
         } catch (error) {
             response.status(500).json(error);
