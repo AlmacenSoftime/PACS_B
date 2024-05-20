@@ -5,37 +5,37 @@ import { Rol } from "./Rol";
 export class Usuario {
 
     @PrimaryGeneratedColumn({ name: 'nUsuarioID' })
-    id: number;
+    public id: number;
 
     @Column({ name: 'sUsuario' })
-    usuario: string;
+    public usuario: string;
 
     @Column({ name: 'sNombreApellido' })
-    nombreApellido: string;
+    public nombreApellido: string;
 
     @Column({ name: 'sTelefonoNumero' })
-    telefono: string;
+    public telefono: string;
 
     @Column({ name: 'sTelefonoPrefijo' })
-    prefijo: string;
+    public prefijo: string;
 
     @Column({ name: 'sEmail' })
-    eMail: string;
+    public eMail: string;
 
     @Column({ name: 'sPassword' })
-    password: string;
+    public password: string;
 
     @Column({ name: 'sConfigDashboardJson', nullable: true })
-    config?: string;
+    public config?: string;
 
     @Column({ name: 'sFotoPerfil', nullable: true })
-    fotoPefil?: string;
+    public fotoPefil?: string;
 
     @Column({ name: 'sEstado' })
-    estado: string;
+    public estado: string;
 
     @ManyToMany(() => Rol, { eager: true, cascade: true, onDelete: "CASCADE", onUpdate: "CASCADE" })
     @JoinTable({ name: 'usuariorol', joinColumn: { name: 'nUsuarioID' }, inverseJoinColumn: { name: 'nRolID' } })
-    Roles: Rol[];
+    public Roles: Rol[];
 
 }

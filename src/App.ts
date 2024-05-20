@@ -13,12 +13,13 @@ import swaggerDocument from './docs/swagger.json';
 import {
     AuthenticationRoutes,
     DataRoutes,
-    UserSettingsRoutes
+    UserAdministrationRoutes,
+    UserSettingsRoutes,
+    informesRoutes
 } from './controllers';
 
 import { logger } from './loggin-service';
 import { tokenValidator } from './middlewares/token-validator';
-import { UserAdministrationRoutes } from './controllers/users-administrations/users.administration.routes';
 import { RolesRoutes } from './controllers/roles/rol.routes';
 //import { permissionsValidator } from './middlewares/permissions-validator';
 //import { PERMISOS } from './constants';
@@ -68,6 +69,14 @@ app.use(
     tokenValidator,
     //permissionsValidator([PERMISOS.ABM_USUARIOS]),
     UserAdministrationRoutes
+);
+
+// Administracion de Informes
+app.use(
+    '/informes',
+    tokenValidator,
+    //permissionsValidator([PERMISOS.ABM_USUARIOS]),
+    informesRoutes
 );
 
 // swagger

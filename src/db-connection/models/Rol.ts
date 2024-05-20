@@ -5,15 +5,15 @@ import { Permiso } from "./Permiso";
 export class Rol {
 
     @PrimaryGeneratedColumn({ name: 'nRolID' })
-    id: number;
+    public id: number;
 
     @Column({ name: 'sDenominacion' })
-    Denominacion: string;
+    public Denominacion: string;
 
     @Column({ name: 'sEstado' })
-    estado: string;
+    public Estado: string;
 
     @ManyToMany(() => Permiso, { eager: true })
     @JoinTable({ name: 'rolpermiso', joinColumn: { name: 'nRolID' }, inverseJoinColumn: { name: 'nPermisoID' } })
-    Permisos: Permiso[];
+    public Permisos: Permiso[];
 }

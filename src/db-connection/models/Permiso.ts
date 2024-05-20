@@ -4,14 +4,20 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm"
 export class Permiso {
 
     @PrimaryGeneratedColumn({ name: 'nPermisoID' })
-    id: number;
+    public id: number;
 
     @Column({ name: 'sDenominacion' })
-    Denominacion: string;
+    public Denominacion: string;
 
     @Column({ name: 'sPermisoCodigo' })
-    PermisoCodigo: string;
+    public PermisoCodigo: string;
 
     @Column({ name: 'sEstado' })
-    estado: string;
+    public Estado: string;
+
+    @Column({ name: 'dCierreFechaHora' })
+    public FechaCierre: Date;
+
+    @Column({ name: 'sCierreUsuario' })
+    public UsuarioCierre: string;
 }
