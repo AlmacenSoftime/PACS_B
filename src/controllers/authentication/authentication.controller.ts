@@ -66,6 +66,7 @@ export class AuthenticationController {
                     // firmo un JWT y lo envio como respuesta
                     const signedJWT = jwt.sign(
                         {
+                            userID: userDb.id,
                             usuario: userDb.usuario,
                             nombreCompleto: userDb.nombreApellido,
                             fotoPerfil: userDb.fotoPefil,

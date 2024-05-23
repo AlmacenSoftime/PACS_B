@@ -8,17 +8,20 @@ export class EstudioInforme {
     @Column({ name: 'sEstudioID' })
     public EstudioId: string;
 
-    @Column({ name: 'sUsuario' })
-    public Usuario: string;
+    @Column({ name: 'nUsuarioID' })
+    public Usuario: number;
 
     @Column({ name: 'sPreInforme' })
     public Preinforme: string;
 
+    @Column({ name: 'sEstadoID' })
+    public Estado: string;
+
     @Column({ name: 'dCierreFechaHora' })
     public FechaCierre: Date;
 
-    @Column({ name: 'sCierreUsuario' })
-    public UsuarioCierre: string;
+    @Column({ name: 'nCierreUsuario' })
+    public UsuarioCierre?: number;
 
     @Column({ name: 'sAudAccion', default: '' })
     public AudAccion: string;

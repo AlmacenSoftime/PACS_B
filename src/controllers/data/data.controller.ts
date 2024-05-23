@@ -32,13 +32,11 @@ export class DataController {
 
                 estudio['Estado'] = (await studiesRepository
                     .createQueryBuilder()
-                    .select(['sUsuario', 'sCierreUsuario'])
+                    .select(['sEstadoID'])
                     .where({ EstudioId: estudio['ID'] })
                     .limit(1)
                     .execute()
-                    .then((res) =>
-                        res[0]?.sCierreUsuario ? 'Cerrado' :
-                            res[0]?.sUsuario ? 'Informando' : 'Pendiente'));
+                    .then((res) => res[0]?.sEstadoID || 'COMPLETO'));
             }
 
             response.status(200).json(estudios);
