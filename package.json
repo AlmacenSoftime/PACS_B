@@ -40,5 +40,6 @@
     "typeorm": "^0.3.20",
     "winston": "^3.12.0",
     "winston-daily-rotate-file": "^5.0.0"
-  }
+  },
+  "packageManager": "yarn@3.6.1+sha256.811210abb5fb5751da12ead8a9cbc0c150b07e43ac9cbedec6752d22abfd2bd6"
 }
