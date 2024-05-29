@@ -69,7 +69,7 @@ export class OrthancConnector {
         }
     }
 
-    private getValue(value: string, type: string): string {
+    private getValue(value: string, type: string): any {
         if (!value) return null;
 
         switch (type) {
