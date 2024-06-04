@@ -74,10 +74,16 @@ export class UserAdministrationController {
      */
     public readonly createUser = async (request: Request, response: Response): Promise<void> => {
         try {
+            const userBody = request.body as Usuario;            
             const dataSource: DataSource = await createConnection();
             const userRepository = dataSource.getRepository(Usuario);
 
-            const userBody = request.body as Usuario;
+            const userNameTaken = await userRepository.countBy({usuario: userBody.usuario});
+            if(userNameTaken > 0){
+                response.status(409).json("Username existente");
+                return;
+            }
+
             userBody.password = await bcrypt.hash(userBody.password, 10);
             userBody.estado = 'HAB';
 

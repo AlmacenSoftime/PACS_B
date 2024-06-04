@@ -42,12 +42,12 @@ export class AuthenticationController {
                 return;
             }
 
-            // Obtengo al usuario desde la base de datos con su e-mail
+            // Obtengo al usuario desde la base de datos con su usuario
             let userDb: Usuario = null;
             userDb = await dataSource.manager.findOne(Usuario,
                 {
                     where:
-                        { eMail: requestData.email },
+                        { usuario: requestData.user },
                     relations: ['Roles', 'Roles.Permisos'],
                     loadEagerRelations: true
                 }
@@ -58,7 +58,7 @@ export class AuthenticationController {
                 if (await bcrypt.compare(requestData.password, userDb.password)) {
                     // Si el login es correcto, pero no tiene roles, se le prohibe el accesso
                     if (!userDb.Roles.length) {
-                        logger.warn(`${request.url} - No existen roles asignados para el usuario ${requestData.email}`);
+                        logger.warn(`${request.url} - No existen roles asignados para el usuario ${requestData.user}`);
                         response.status(401).json({ message: 'Usuario sin permiso para acceder. Contacte con el administrador.' });
                         return;
                     }
@@ -81,13 +81,13 @@ export class AuthenticationController {
                 }
                 else {
                     // el login es invalido
-                    logger.warn(`${request.url} - Intento de login inválido con el mail ${requestData.email}`);
+                    logger.warn(`${request.url} - Intento de login inválido con el usuario ${requestData.user}`);
                     response.status(401).json({ message: 'Login inválido. Revise sus crendenciales.' });
                 }
             }
             else {
                 // si no trae registro, el email no esta registrdo
-                logger.warn(`${request.url} - El email ${requestData.email} no se encuentra registrado`);
+                logger.warn(`${request.url} - El usuario ${requestData.user} no se encuentra registrado`);
                 response.status(401).json({ message: 'Login inválido. Revise sus crendenciales.' });
             }
         }
@@ -161,6 +161,6 @@ export class AuthenticationController {
  * @interface LoginRequest
  */
 interface LoginRequest {
-    email: string;
+    user: string;
     password: string;
 }
