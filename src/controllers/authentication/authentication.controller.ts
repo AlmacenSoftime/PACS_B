@@ -17,7 +17,7 @@ export class AuthenticationController {
 
     // con esta propiedad creo un esquema para validar que lo objetos tengan esas propiedades
     private readonly schemaLogin = Joi.object({
-        email: Joi.string().min(6).max(255).required().email(),
+        user: Joi.string().min(3).max(255).required(),
         password: Joi.string().min(4).max(1024).required()
     });
 

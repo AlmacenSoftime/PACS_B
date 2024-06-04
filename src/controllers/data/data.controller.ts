@@ -12,9 +12,7 @@ export class DataController {
 
     private DICOMConnector: OrthancConnector;
 
-    constructor() {
-        this.DICOMConnector = new OrthancConnector();
-    }
+    constructor() { this.DICOMConnector = new OrthancConnector(); }
 
     /**
      * @description Devuelve los datos para popular la grilla principal

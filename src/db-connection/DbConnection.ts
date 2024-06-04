@@ -2,10 +2,19 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
 
-import { EstudioInforme, Permiso, Rol, Usuario } from "./models";
+import {
+    Estado,
+    Estudio,
+    EstudioInforme,
+    Modalidad,
+    ParametrosSistema,
+    Permiso,
+    Rol,
+    Usuario
+} from "./models";
 import { logger } from "../loggin-service";
 
-const debugMode =  process.env.CONFIGURATION === 'dev';
+const debugMode = true//process.env.CONFIGURATION === 'dev';
 
 const dbConnection = new DataSource({
     type: 'mysql',
@@ -14,7 +23,16 @@ const dbConnection = new DataSource({
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
-    entities: [Usuario, Rol, Permiso, EstudioInforme],
+    entities: [
+        Usuario,
+        Rol,
+        Permiso,
+        EstudioInforme,
+        Estado,
+        Estudio,
+        Modalidad,
+        ParametrosSistema
+    ],
     poolSize: 100,
     logger: "advanced-console",
     logging: debugMode

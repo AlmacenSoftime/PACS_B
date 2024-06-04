@@ -27,6 +27,5 @@ export class EstudioInforme {
     public AudAccion: string;
 
     @Column({ name: 'dAudFechaHora', default: '' })
-    public AudFechaHora: Date;
-
+    public AudFechaHora: Date;    
 }
