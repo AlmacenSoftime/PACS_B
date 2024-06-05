@@ -1,18 +1,13 @@
-import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
-import { Modalidad } from "./Modalidad";
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity({ name: "estudio" })
 export class Estudio {
     @PrimaryGeneratedColumn({ name: 'nEstudioID' })
     public id: number;
 
-    @Column({ name: 'sEstudio' })
+    @Column({ name: 'sEstudioID' })
     public EstudioID: string;
 
     @Column({ name: 'sModalidadID' })
     public ModalidadId: string;
-
-    @OneToOne(() => Modalidad)
-    @JoinColumn({ name: 'sModalidadID', referencedColumnName: 'sModalidad' })
-    public Modalidad: Modalidad;
 }

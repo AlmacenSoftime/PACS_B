@@ -78,7 +78,8 @@ export class OrthancConnector {
                     const year = value.slice(0, 4);
                     const month = value.slice(4, 6);
                     const day = value.slice(6);
-                    return `${day}/${month}/${year}`;
+                    //return `${day}/${month}/${year}`;
+                    return new Date(+year, +month - 1, +day);
                 }
                 else '';
                 break;

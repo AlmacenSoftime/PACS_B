@@ -1,7 +1,11 @@
-import { Column, Entity } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity({ name: "parametrosistema" })
 export class ParametrosSistema {
+
+    @PrimaryGeneratedColumn({ name: 'ParametroSistemaID' })
+    public id: number;
+
     @Column({ name: 'sSigsOperativo' })
     public SigsOperativo: number;
 
