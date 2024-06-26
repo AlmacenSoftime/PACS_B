@@ -7,6 +7,5 @@ const informesController = new InformesController();
 informesRoutes.get('/:studyId', informesController.GetInforme);
 informesRoutes.post('/:studyId', informesController.SaveInforme);
 informesRoutes.put('/:studyId', informesController.CloseInforme);
-informesRoutes.patch('/:studyId', informesController.ReOpenInforme);
 
 export { informesRoutes };

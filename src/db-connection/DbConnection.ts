@@ -3,8 +3,6 @@ import "reflect-metadata"
 import { DataSource } from "typeorm"
 
 import {
-    //Estado,
-    Estudio,
     EstudioInforme,
     Modalidad,
     ParametrosSistema,
@@ -28,8 +26,6 @@ const dbConnection = new DataSource({
         Rol,
         Permiso,
         EstudioInforme,
-        //Estado,
-        Estudio,
         Modalidad,
         ParametrosSistema
     ],

@@ -96,4 +96,5 @@ export const ORTHANC_MAPPING_INFO: { [key: string]: { name: string, mappedName?:
     '0029,0010': { name: 'PrivateCreator', type: 'String', },
     '0029,0011': { name: 'PrivateCreator', type: 'String', },
     '7fe0,0010': { name: 'PixelData', type: 'String', },
+    '0008,0054': { name: 'RetrieveAETitle', type: 'String', mappedName: 'Nombre Equipo' },
 }
