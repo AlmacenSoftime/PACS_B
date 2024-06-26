@@ -14,7 +14,6 @@ export const ORTHANC_MAPPING_INFO: { [key: string]: { name: string, mappedName?:
     '0008,0032': { name: 'AcquisitionTime', type: 'String', },
     '0008,0033': { name: 'ContentTime', type: 'String', },
     '0008,0050': { name: 'AccessionNumber', mappedName: 'Número Turno', type: 'String', },
-    '0008,0060': { name: 'Modality', type: 'String', },
     '0008,0070': { name: 'Manufacturer', type: 'String', },
     '0008,0080': { name: 'InstitutionName', type: 'String', },
     '0008,0090': { name: 'ReferringPhysicianName', mappedName: 'Médico Prescribe', type: 'String', },
@@ -97,4 +96,5 @@ export const ORTHANC_MAPPING_INFO: { [key: string]: { name: string, mappedName?:
     '0029,0011': { name: 'PrivateCreator', type: 'String', },
     '7fe0,0010': { name: 'PixelData', type: 'String', },
     '0008,0054': { name: 'RetrieveAETitle', type: 'String', mappedName: 'Nombre Equipo' },
+    '0008,0060': { name: 'Modality', type: 'String', mappedName: 'Modalidad' },
 }
