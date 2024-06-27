@@ -76,14 +76,14 @@ export class InformesController {
         }
 
         if (informeObj?.Estado == 'CERRADO') {
-            if (!informeObj.FechaCierre && !informeObj.UsuarioCierre) {
+            if (!informeObj.FechaCierre && !informeObj.UsuarioCierreID) {
                 informeObj.FechaCierre = new Date();
-                informeObj.UsuarioCierre = usuario?.['userID'];
+                informeObj.UsuarioCierreID = usuario?.['userID'];
             }
         }
         else {
             informeObj.FechaCierre = null;
-            informeObj.UsuarioCierre = null;
+            informeObj.UsuarioCierreID = null;
             informeObj.MedicoInformante = usuario?.['nombreCompleto'];
         }
 

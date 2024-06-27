@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm"
+import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm"
+import { Usuario } from "./Usuario";
 
 @Entity({ name: "estudioinforme" })
 export class EstudioInforme {
@@ -21,7 +22,7 @@ export class EstudioInforme {
     public FechaCierre: Date;
 
     @Column({ name: 'nCierreUsuario' })
-    public UsuarioCierre?: number;
+    public UsuarioCierreID?: number;
 
     @Column({ name: 'sAudAccion', default: '' })
     public AudAccion: string;
@@ -31,4 +32,8 @@ export class EstudioInforme {
 
     @Column({ name: 'sMedicoFirmante' })
     public MedicoInformante?: string;
+
+    @OneToOne(() => Usuario, { eager: true })
+    @JoinColumn({ name: 'nUsuarioID' })
+    public UsuarioCierre?: Usuario;
 }
