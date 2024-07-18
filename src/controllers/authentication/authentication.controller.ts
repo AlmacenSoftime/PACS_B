@@ -55,7 +55,7 @@ export class AuthenticationController {
 
             if (userDb) {
                 // comparo la password plana contra el hash de la base de datos
-                if (await bcrypt.compare(requestData.password, userDb.password)) {
+                if (bcrypt.compareSync(requestData.password, userDb.password)) {
                     // Si el login es correcto, pero no tiene roles, se le prohibe el accesso
                     if (!userDb.Roles.length) {
                         logger.warn(`${request.url} - No existen roles asignados para el usuario ${requestData.user}`);

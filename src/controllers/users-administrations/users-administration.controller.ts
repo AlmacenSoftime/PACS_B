@@ -84,7 +84,7 @@ export class UserAdministrationController {
                 return;
             }
 
-            userBody.password = await bcrypt.hash(userBody.password, 10);
+            userBody.password = bcrypt.hashSync(userBody.password, 10);
             userBody.estado = 'HAB';
 
             await userRepository.save(userBody);
@@ -109,7 +109,7 @@ export class UserAdministrationController {
             const userBody = request.body as Usuario;
 
             if (userBody.password) {
-                userBody.password = await bcrypt.hash(userBody.password, 10);
+                userBody.password = bcrypt.hashSync(userBody.password, 10);
             }
             else {
                 delete userBody.password;
