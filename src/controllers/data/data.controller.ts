@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+
 import { OrthancConnector } from "../../orthanc-connection";
 import { createConnection } from "../../db-connection/DbConnection";
 import { EstudioInforme } from "../../db-connection/models";
@@ -29,13 +30,16 @@ export class DataController {
             for (const estudio of estudios) {
                 const id = estudio['ID']
 
-                estudio['Estado'] = (await studiesRepository
+                const joinData = (await studiesRepository
                     .createQueryBuilder()
-                    .select(['sEstadoID'])
+                    .select(['sEstadoID', 'sMedicoFirmante'])
                     .where({ EstudioId: id })
                     .limit(1)
                     .execute()
-                    .then((res) => res[0]?.sEstadoID || 'COMPLETO'));
+                    .then((res) => res[0]));
+
+                estudio['Estado'] = joinData?.sEstadoID || 'COMPLETO';
+                estudio['Medico Informante'] = joinData?.sMedicoFirmante;
             }
 
             response.status(200).json(estudios);

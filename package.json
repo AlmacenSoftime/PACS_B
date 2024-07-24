@@ -1,8 +1,8 @@
 {
   "name": "softime-pacs.back-end",
-  "version": "1.0.0",
+  "version": "1.18",
   "description": "",
-  "main": "index.js",
+  "main": "dist/App.js",
   "scripts": {
     "build": "npx eslint . --ext .ts && npx tsc",
     "start": "npm run build && node dist/App.js",
