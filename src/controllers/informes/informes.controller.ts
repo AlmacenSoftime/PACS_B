@@ -6,7 +6,6 @@ import { createConnection } from "../../db-connection/DbConnection";
 import { EstudioInforme, Usuario } from "../../db-connection/models";
 import { logger } from "../../loggin-service";
 
-
 export class InformesController {
 
     public readonly GetInforme = async (request: Request, response: Response): Promise<void> => {
@@ -73,16 +72,12 @@ export class InformesController {
 
         if (informeObj?.Estado != 'CERRADO') {
             informeObj.Estado = estado;
+            informeObj.MedicoInformante = usuario?.['nombreCompleto'];
         }
 
         if (!informeObj.FechaCierre && !informeObj.UsuarioCierreID && estado === "CERRADO") {
             informeObj.FechaCierre = new Date();
             informeObj.UsuarioCierreID = usuario?.['userID'];
-            informeObj.MedicoInformante = usuario?.['nombreCompleto'];
-        }
-        else {
-            informeObj.FechaCierre = null;
-            informeObj.UsuarioCierreID = null;
             informeObj.MedicoInformante = usuario?.['nombreCompleto'];
         }
 
