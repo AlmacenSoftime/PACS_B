@@ -75,11 +75,10 @@ export class InformesController {
             informeObj.Estado = estado;
         }
 
-        if (informeObj?.Estado == 'CERRADO') {
-            if (!informeObj.FechaCierre && !informeObj.UsuarioCierreID) {
-                informeObj.FechaCierre = new Date();
-                informeObj.UsuarioCierreID = usuario?.['userID'];
-            }
+        if (!informeObj.FechaCierre && !informeObj.UsuarioCierreID && estado === "CERRADO") {
+            informeObj.FechaCierre = new Date();
+            informeObj.UsuarioCierreID = usuario?.['userID'];
+            informeObj.MedicoInformante = usuario?.['nombreCompleto'];
         }
         else {
             informeObj.FechaCierre = null;
@@ -87,7 +86,7 @@ export class InformesController {
             informeObj.MedicoInformante = usuario?.['nombreCompleto'];
         }
 
-        informeObj.AudAccion = '';
+        informeObj.AudAccion = !informeObj.id ? 'A' : 'M';
         informeObj.AudFechaHora = new Date();
 
         return informeRepository.save(informeObj);

@@ -34,6 +34,6 @@ export class EstudioInforme {
     public MedicoInformante?: string;
 
     @OneToOne(() => Usuario, { eager: true })
-    @JoinColumn({ name: 'nUsuarioID' })
+    @JoinColumn({ name: 'nCierreUsuario' })
     public UsuarioCierre?: Usuario;
 }
