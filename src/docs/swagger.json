@@ -1,176 +1,235 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
+    "version": "1.2.0",
     "title": "PACS API",
     "description": "API para el sistema PACS de Softime"
   },
-  "host": "localhost:3000",
+  "host": "localhost:8015",
   "basePath": "/",
   "tags": [
     {
-      "name": "Autenticación",
-      "description": "Métodos para el manejo de la seguridad en la aplicación"
+      "name": "Authentication",
+      "description": "Authentication endpoints"
     },
     {
-      "name": "Roles",
-      "description": "Métodos para el manejo de roles"
+      "name": "Data",
+      "description": "Study data endpoints"
     },
     {
-      "name": "Lista",
-      "description": "Métodos relacionados a la tabla principal de la aplicación"
+      "name": "Users",
+      "description": "User management endpoints"
+    },
+    {
+      "name": "Reports",
+      "description": "Report management endpoints"
     }
-  ],
-  "schemes": [
-    "http",
-    "https"
   ],
   "securityDefinitions": {
-    "apiKeyAuth": {
+    "AuthToken": {
       "type": "apiKey",
       "in": "header",
-      "name": "Auth-Token",
-      "description": "Token JWT"
+      "name": "Auth-Token"
+    },
+    "ApiToken": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "api-token"
     }
   },
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
   "paths": {
     "/authentication/login": {
       "post": {
-        "description": "Método de login al sistema",
         "tags": [
-          "Autenticación"
+          "Authentication"
         ],
+        "summary": "Login to system",
         "parameters": [
           {
-            "$ref": "#/definitions/loginRequest"
+            "in": "body",
+            "name": "credentials",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "user": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              }
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "Responde con token JWT"
-          },
-          "400": {
-            "description": "Request inválido"
+            "description": "JWT Token"
           },
           "401": {
-            "description": "Login inválido"
-          }
-        }
-      }
-    },
-    "/authentication/user": {
-      "get": {
-        "description": "Obtiene el objeto User codificado dentro del JWT",
-        "tags": [
-          "Autenticación"
-        ],
-        "security": [
-          {
-            "apiKeyAuth": []
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Objeto user con los roles y perfiles del usuario"
-          },
-          "401": {
-            "description": "Token de seguridad inválido o ausente"
-          }
-        }
-      }
-    },
-    "/authentication/refresh": {
-      "post": {
-        "description": "Método para refrescar el tiempo de expiracion de tokens válidos",
-        "tags": [
-          "Autenticación"
-        ],
-        "security": [
-          {
-            "apiKeyAuth": []
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Token JWT con nuevo tiempo de expiración"
-          },
-          "401": {
-            "description": "Token de seguridad inválido o ausente"
+            "description": "Invalid credentials"
           }
         }
       }
     },
     "/list/getData": {
       "get": {
-        "description": "Método obtener los datos para alimentar la grilla principal",
         "tags": [
-          "Lista"
+          "Data"
         ],
         "security": [
           {
-            "apiKeyAuth": []
+            "AuthToken": []
           }
         ],
+        "summary": "Get list of studies",
         "responses": {
           "200": {
-            "description": "Token JWT con nuevo tiempo de expiración"
-          },
-          "401": {
-            "description": "Token de seguridad inválido o ausente"
+            "description": "List of studies"
           }
         }
       }
     },
-    "/roles": {
+    "/informes/{studyId}": {
       "get": {
-        "description": "Obtiene los roles creados en la base de datos",
         "tags": [
-          "Roles"
+          "Reports"
         ],
         "security": [
           {
-            "apiKeyAuth": []
+            "AuthToken": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "studyId",
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "Lista de roles"
-
+            "description": "Report data"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "security": [
+          {
+            "AuthToken": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "studyId",
+            "required": true,
+            "type": "string"
           },
-          "401": {
-            "description": "Token de seguridad inválido o ausente"
+          {
+            "in": "body",
+            "name": "report",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Report saved"
+          }
+        }
+      }
+    },
+    "/admin-users": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "AuthToken": []
+          }
+        ],
+        "summary": "Get all users",
+        "responses": {
+          "200": {
+            "description": "List of users"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "AuthToken": []
+          }
+        ],
+        "summary": "Create new user",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "user",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Usuario"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User created"
           }
         }
       }
     }
   },
   "definitions": {
-    "loginRequest": {
-      "in": "body",
-      "name": "Login Request",
+    "Usuario": {
       "type": "object",
-      "required": true,
       "properties": {
-        "email": {
-          "type": "string",
-          "example": "mail@ejemplo.com"
+        "usuario": {
+          "type": "string"
+        },
+        "nombreApellido": {
+          "type": "string"
+        },
+        "eMail": {
+          "type": "string"
         },
         "password": {
-          "type": "string",
-          "example": "contraseña"
+          "type": "string"
+        },
+        "Roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Rol"
+          }
         }
       }
     },
-    "listasResponse": {
-      "name": "Lista Response",
-      "type": "array",
-      "items": {}
+    "Rol": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "Denominacion": {
+          "type": "string"
+        }
+      }
     }
   }
 }

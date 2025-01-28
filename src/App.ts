@@ -6,6 +6,7 @@ dotenv.config();
 import express from 'express';
 import cors, { CorsOptions } from "cors";
 import swaggerUi from 'swagger-ui-express';
+import { createProxyMiddleware } from 'http-proxy-middleware';
 
 import swaggerDocument from './docs/swagger.json';
 
@@ -37,6 +38,40 @@ const corsOptions: CorsOptions = {
 }
 // middleware para parsear request json
 app.use(express.json());
+
+const stoneProxyConfig = {
+    target: process.env.STONE_FRONTEND_URL,
+    changeOrigin: true,
+    ws: true,
+    secure: true,
+    followRedirects: true,
+    auth: `${process.env.ORTHANC_USERNAME}:${process.env.ORTHANC_PASSWORD}`,    
+    onProxyReq: (proxyReq) => {
+        console.log('proxyReq', proxyReq);
+        proxyReq.setHeader('X-Forwarded-Proto', 'http');
+        proxyReq.setHeader('X-Forwarded-Host', process.env.HOST || 'localhost:8015');
+    },
+    logLevel: 'debug'
+};
+
+const ohifProxyConfig = {
+    target: process.env.OHIF_FRONTEND_URL,
+    changeOrigin: true,
+    ws: true,
+    secure: false,
+    followRedirects: false,
+    auth: `${process.env.ORTHANC_USERNAME}:${process.env.ORTHANC_PASSWORD}`,   
+    onProxyReq: (proxyReq) => {
+        console.log('proxyReq', proxyReq);
+        proxyReq.setHeader('X-Forwarded-Proto', 'http');
+        proxyReq.setHeader('X-Forwarded-Host', process.env.HOST || 'localhost:8015');
+    },
+    logLevel: 'debug'
+};
+
+// Add proxy middleware BEFORE your API routes
+app.use('/stone', createProxyMiddleware(stoneProxyConfig));
+app.use('/ohif', createProxyMiddleware(ohifProxyConfig));
 
 // Rutas a los controladores
 app.use('/authentication', cors(corsOptions), AuthenticationRoutes);
