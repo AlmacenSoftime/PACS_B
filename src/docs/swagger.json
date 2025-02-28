@@ -3,27 +3,13 @@
   "info": {
     "version": "1.2.0",
     "title": "PACS API",
-    "description": "API para el sistema PACS de Softime"
+    "description": "API for PACS System"
   },
   "host": "localhost:8015",
   "basePath": "/",
-  "tags": [
-    {
-      "name": "Authentication",
-      "description": "Authentication endpoints"
-    },
-    {
-      "name": "Data",
-      "description": "Study data endpoints"
-    },
-    {
-      "name": "Users",
-      "description": "User management endpoints"
-    },
-    {
-      "name": "Reports",
-      "description": "Report management endpoints"
-    }
+  "schemes": [
+    "http",
+    "https"
   ],
   "securityDefinitions": {
     "AuthToken": {
@@ -43,7 +29,7 @@
         "tags": [
           "Authentication"
         ],
-        "summary": "Login to system",
+        "summary": "User login",
         "parameters": [
           {
             "in": "body",
@@ -72,17 +58,38 @@
         }
       }
     },
-    "/list/getData": {
-      "get": {
+    "/authentication/refresh": {
+      "post": {
         "tags": [
-          "Data"
+          "Authentication"
         ],
+        "summary": "Refresh auth token",
         "security": [
           {
             "AuthToken": []
           }
         ],
-        "summary": "Get list of studies",
+        "responses": {
+          "200": {
+            "description": "New JWT Token"
+          },
+          "401": {
+            "description": "Invalid token"
+          }
+        }
+      }
+    },
+    "/list/getData": {
+      "get": {
+        "tags": [
+          "Studies"
+        ],
+        "summary": "Get studies list",
+        "security": [
+          {
+            "AuthToken": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "List of studies"
@@ -95,6 +102,7 @@
         "tags": [
           "Reports"
         ],
+        "summary": "Get report by study ID",
         "security": [
           {
             "AuthToken": []
@@ -118,6 +126,7 @@
         "tags": [
           "Reports"
         ],
+        "summary": "Save report draft",
         "security": [
           {
             "AuthToken": []
@@ -149,6 +158,43 @@
             "description": "Report saved"
           }
         }
+      },
+      "put": {
+        "tags": [
+          "Reports"
+        ],
+        "summary": "Close/Finalize report",
+        "security": [
+          {
+            "AuthToken": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "studyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "report",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Report closed"
+          }
+        }
       }
     },
     "/admin-users": {
@@ -156,12 +202,12 @@
         "tags": [
           "Users"
         ],
+        "summary": "Get all users",
         "security": [
           {
             "AuthToken": []
           }
         ],
-        "summary": "Get all users",
         "responses": {
           "200": {
             "description": "List of users"
@@ -172,12 +218,12 @@
         "tags": [
           "Users"
         ],
+        "summary": "Create new user",
         "security": [
           {
             "AuthToken": []
           }
         ],
-        "summary": "Create new user",
         "parameters": [
           {
             "in": "body",
@@ -191,6 +237,59 @@
         "responses": {
           "200": {
             "description": "User created"
+          },
+          "409": {
+            "description": "Username already exists"
+          }
+        }
+      }
+    },
+    "/admin-users/{userId}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get user by ID",
+        "security": [
+          {
+            "AuthToken": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User details"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Delete user",
+        "security": [
+          {
+            "AuthToken": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User deleted"
           }
         }
       }
@@ -206,10 +305,19 @@
         "nombreApellido": {
           "type": "string"
         },
+        "telefono": {
+          "type": "string"
+        },
+        "prefijo": {
+          "type": "string"
+        },
         "eMail": {
           "type": "string"
         },
         "password": {
+          "type": "string"
+        },
+        "estado": {
           "type": "string"
         },
         "Roles": {
@@ -227,6 +335,9 @@
           "type": "integer"
         },
         "Denominacion": {
+          "type": "string"
+        },
+        "Estado": {
           "type": "string"
         }
       }

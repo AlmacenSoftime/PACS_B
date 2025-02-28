@@ -6,7 +6,7 @@ dotenv.config();
 import express from 'express';
 import cors, { CorsOptions } from "cors";
 import swaggerUi from 'swagger-ui-express';
-import { createProxyMiddleware } from 'http-proxy-middleware';
+import { createProxyMiddleware, Options } from 'http-proxy-middleware';
 
 import swaggerDocument from './docs/swagger.json';
 
@@ -39,39 +39,30 @@ const corsOptions: CorsOptions = {
 // middleware para parsear request json
 app.use(express.json());
 
-const stoneProxyConfig = {
-    target: process.env.STONE_FRONTEND_URL,
+const viewerProxy: Options = {
+    target: process.env.VIEWER_FRONTEND_URL,
     changeOrigin: true,
     ws: true,
     secure: true,
     followRedirects: true,
-    auth: `${process.env.ORTHANC_USERNAME}:${process.env.ORTHANC_PASSWORD}`,    
-    onProxyReq: (proxyReq) => {
-        console.log('proxyReq', proxyReq);
-        proxyReq.setHeader('X-Forwarded-Proto', 'http');
-        proxyReq.setHeader('X-Forwarded-Host', process.env.HOST || 'localhost:8015');
+    auth: `${process.env.ORTHANC_USERNAME}:${process.env.ORTHANC_PASSWORD}`,
+    logger: logger,
+    on: {
+        error: (err, req, res) => {
+            logger.error(err);
+            res.end('Algo salio mal');
+        },
     },
-    logLevel: 'debug'
+    pathFilter: (pathname) => {
+        return pathname.startsWith('/stone') ||
+            pathname.startsWith('/ohif') ||
+            pathname.includes('/studies/'); // Allow studies path
+    },
 };
 
-const ohifProxyConfig = {
-    target: process.env.OHIF_FRONTEND_URL,
-    changeOrigin: true,
-    ws: true,
-    secure: false,
-    followRedirects: false,
-    auth: `${process.env.ORTHANC_USERNAME}:${process.env.ORTHANC_PASSWORD}`,   
-    onProxyReq: (proxyReq) => {
-        console.log('proxyReq', proxyReq);
-        proxyReq.setHeader('X-Forwarded-Proto', 'http');
-        proxyReq.setHeader('X-Forwarded-Host', process.env.HOST || 'localhost:8015');
-    },
-    logLevel: 'debug'
-};
 
 // Add proxy middleware BEFORE your API routes
-app.use('/stone', createProxyMiddleware(stoneProxyConfig));
-app.use('/ohif', createProxyMiddleware(ohifProxyConfig));
+app.use('/viewer', createProxyMiddleware(viewerProxy));
 
 // Rutas a los controladores
 app.use('/authentication', cors(corsOptions), AuthenticationRoutes);
@@ -127,9 +118,9 @@ app.use(
 );
 
 // swagger
-if (process.env.CONFIGURATION === 'dev') {
+//if (process.env.CONFIGURATION === 'dev') {
     logger.info("Configuracion DEV");
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-}
+//}
 
 app.listen(port, () => logger.info(`API PACS Softime corriendo en el puerto ${port}`));
