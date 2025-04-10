@@ -120,7 +120,7 @@ app.use(
 
 app.use(
     '/study-viewer-urls',
-    //apiTokenValidator,
+    apiTokenValidator,
     studiesViewersUrlsRoutes
 );
 
