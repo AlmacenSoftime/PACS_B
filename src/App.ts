@@ -24,6 +24,7 @@ import { tokenValidator } from './middlewares/token-validator';
 import { RolesRoutes } from './controllers/roles/rol.routes';
 import { apiTokenValidator } from './middlewares/api-token-validator';
 import { studiesIdentificationRoute } from './controllers/studies-identification/studies-identification.rotes';
+import { studiesViewersUrlsRoutes } from './controllers/studies-viewers-urls/studies-viewers-urls.routes';
 //import { permissionsValidator } from './middlewares/permissions-validator';
 //import { PERMISOS } from './constants';
 
@@ -115,6 +116,12 @@ app.use(
     '/study-identification',
     apiTokenValidator,
     studiesIdentificationRoute
+);
+
+app.use(
+    '/study-viewer-urls',
+    //apiTokenValidator,
+    studiesViewersUrlsRoutes
 );
 
 // swagger
