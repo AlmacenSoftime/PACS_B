@@ -23,89 +23,35 @@ export class OrthancConnector {
 
     public async getStudies() {
         try {
-            const authorizationHeader = { headers: { 'Authorization': `Basic ${Buffer.from(`${this._username}:${this._password}`).toString('base64')}` } }
+            const authorizationHeader = { 
+                headers: { 
+                    'Authorization': `Basic ${Buffer.from(`${this._username}:${this._password}`).toString('base64')}`,
+                    'Accept-Encoding': 'gzip' // Habilitar compresión
+                },
+                timeout: 30000 // Timeout de 30 segundos
+            }
+            
             const RESPONSE = await axios.get<StudyModel[]>(
-                `${this._orthancServerUrl}/studies?expand=true&full=true`, authorizationHeader);
+                `${this._orthancServerUrl}/studies?expand=true&full=true`, 
+                authorizationHeader
+            );
 
             if (RESPONSE.status === 200) {
                 const RAW_STUDIES_DATA = RESPONSE.data;
                 const convertedData: Array<unknown> = [];
 
-                // recorro los estudios 
-                for (const study of RAW_STUDIES_DATA) {
-                    const studyObject: { [key: string]: unknown } = {};
-
-                    const PatientMainDicomTagsKeys = Object.keys(study.PatientMainDicomTags);
-                    // recorro los datos del paciente y lo extraigo al objeto
-                    for (const patientTag of PatientMainDicomTagsKeys) {
-                        // informacion del tag del DICOM
-                        const tagData = study.PatientMainDicomTags[patientTag];
-                        // informacion customizada para el mapeo dentro de la API
-                        const mappingData = ORTHANC_MAPPING_INFO[patientTag];
-
-                        // Creo la key en el objeto a devolver
-                        studyObject[mappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, mappingData?.type);
-                    }
-
-                    const DICOMTagsKeys = Object.keys(study.MainDicomTags);
-                    // recorro los datos del estudio y lo extraigo al objeto
-                    for (const DICOMTag of DICOMTagsKeys) {
-                        // informacion del tag del DICOM
-                        const tagData = study.MainDicomTags[DICOMTag];
-                        // informacion customizada para el mapeo dentro de la API
-                        const mappingData = ORTHANC_MAPPING_INFO[DICOMTag];
-
-                        // Creo la key en el objeto a devolver
-                        studyObject[mappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, mappingData?.type);
-                    }
-
-                    // obtengo datos de la primera serie y agrego los tags al objeto principal
-                    const firstSerieID = study.Series[0];
-
-                    if (firstSerieID) {
-                        const convertedData = {};
-                        // busco en el cache antes de hacer la peticion
-                        const chachedData = await OrthancConnector._cache.get(firstSerieID);
-
-                        if (!chachedData) {
-
-                            const firstSerieResponse = await axios.get(`${this._orthancServerUrl}/series/${firstSerieID}/instances-tags`, authorizationHeader);
-
-                            const firstSerieData = firstSerieResponse.data;
-                            const uniqueKey = Object.keys(firstSerieData)[0];
-                            const serieData = firstSerieData[uniqueKey];
-
-                            const seriesDataKeys = Object.keys(serieData);
-
-                            for (const key of seriesDataKeys) {
-                                // informacion del tag del DICOM
-                                const tagData = serieData[key];
-                                // informacion customizada para el mapeo dentro de la API
-                                const seriesMappingData = SERIES_ORTHANC_MAPPING_INFO[key];
-
-                                if (seriesMappingData) {
-                                    // Creo la key en el objeto a devolver
-                                    convertedData[seriesMappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, seriesMappingData?.type);
-                                }
-                            }
-
-                            await OrthancConnector._cache.set(firstSerieID, convertedData);
-                            Object.assign(studyObject, convertedData);
-                        }
-                        // si ya esta en el cache lo agrego al objeto
-                        else {
-                            Object.assign(studyObject, chachedData);
-                        }
-                    }
-
-                    // guardo el resto de la data relevante
-                    studyObject['ID'] = study.ID;
-                    //studyObject['Series'] = study.Series;
-                    studyObject['Tipo'] = study.Type;
-
-                    // agrego el estudio transformado al array de estudios que se va a devolver
-
-                    convertedData.push(studyObject);
+                // Procesar en paralelo con Promise.all pero limitando concurrencia
+                const BATCH_SIZE = 10; // Procesar de a 10 estudios por vez
+                
+                for (let i = 0; i < RAW_STUDIES_DATA.length; i += BATCH_SIZE) {
+                    const batch = RAW_STUDIES_DATA.slice(i, i + BATCH_SIZE);
+                    
+                    const batchPromises = batch.map(async (study) => {
+                        return this.processStudy(study, authorizationHeader);
+                    });
+                    
+                    const batchResults = await Promise.all(batchPromises);
+                    convertedData.push(...batchResults);
                 }
 
                 return convertedData;
@@ -122,6 +68,79 @@ export class OrthancConnector {
             console.error(`Error en Orthanc connector. ${error}`);
             throw error;
         }
+    }
+
+     private async processStudy(study: StudyModel, authorizationHeader: any): Promise<any> {
+        const studyObject: { [key: string]: unknown } = {};
+
+        // Procesar tags del paciente
+        const PatientMainDicomTagsKeys = Object.keys(study.PatientMainDicomTags);
+        for (const patientTag of PatientMainDicomTagsKeys) {
+            const tagData = study.PatientMainDicomTags[patientTag];
+            const mappingData = ORTHANC_MAPPING_INFO[patientTag];
+            studyObject[mappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, mappingData?.type);
+        }
+
+        // Procesar tags del estudio
+        const DICOMTagsKeys = Object.keys(study.MainDicomTags);
+        for (const DICOMTag of DICOMTagsKeys) {
+            const tagData = study.MainDicomTags[DICOMTag];
+            const mappingData = ORTHANC_MAPPING_INFO[DICOMTag];
+            studyObject[mappingData?.mappedName || tagData.Name] = this.getValue(tagData.Value, mappingData?.type);
+        }
+
+        // Procesar primera serie con cache mejorado
+        const firstSerieID = study.Series[0];
+        if (firstSerieID) {
+            const seriesData = await this.getSeriesDataWithCache(firstSerieID, authorizationHeader);
+            Object.assign(studyObject, seriesData);
+        }
+
+        studyObject['ID'] = study.ID;
+        studyObject['Tipo'] = study.Type;
+
+        return studyObject;
+    }
+
+    private async getSeriesDataWithCache(serieID: string, authorizationHeader: any): Promise<any> {
+        const cachedData = await OrthancConnector._cache.get(serieID);
+        
+        if (cachedData) {
+            return cachedData;
+        }
+
+        try {
+            const firstSerieResponse = await axios.get(
+                `${this._orthancServerUrl}/series/${serieID}/instances-tags`, 
+                { ...authorizationHeader, timeout: 10000 }
+            );
+
+            const convertedData = this.processSeriesData(firstSerieResponse.data);
+            await OrthancConnector._cache.set(serieID, convertedData);
+            return convertedData;
+        } catch (error) {
+            logger.warn(`Error obteniendo serie ${serieID}: ${error.message}`);
+            return {}; // Retornar objeto vacío en caso de error
+        }
+    }
+
+    private processSeriesData(seriesResponseData: any): any {
+        const convertedData = {};
+        const uniqueKey = Object.keys(seriesResponseData)[0];
+        const serieData = seriesResponseData[uniqueKey];
+        const seriesDataKeys = Object.keys(serieData);
+
+        for (const key of seriesDataKeys) {
+            const tagData = serieData[key];
+            const seriesMappingData = SERIES_ORTHANC_MAPPING_INFO[key];
+
+            if (seriesMappingData) {
+                convertedData[seriesMappingData?.mappedName || tagData.Name] = 
+                    this.getValue(tagData.Value, seriesMappingData?.type);
+            }
+        }
+
+        return convertedData;
     }
 
     private getValue(value: string, type: string): any {

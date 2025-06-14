@@ -29,9 +29,15 @@ const dbConnection = new DataSource({
         Modalidad,
         ParametrosSistema
     ],
-    poolSize: 100,
     logger: "advanced-console",
-    logging: debugMode
+    logging: debugMode,
+    poolSize: +process.env.DB_CONNECTION_POOL_SIZE || 20,
+    acquireTimeout: +process.env.DB_CONNECTION_TIMEOUT || 60000,
+    extra: {
+        connectionLimit: 20,
+        acquireTimeout: 60000,
+        timeout: 60000,
+    },
 });
 
 let isConnecting = false;

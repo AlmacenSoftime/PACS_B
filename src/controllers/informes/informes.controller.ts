@@ -23,7 +23,7 @@ export class InformesController {
             logger.error(`${request.url} - Error inesperado: ${JSON.stringify(error)}`);
             response.sendStatus(500);
         }
-    }
+    } 
 
     public readonly SaveInforme = async (request: Request, response: Response): Promise<void> => {
         try {
